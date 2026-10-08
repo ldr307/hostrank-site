@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vultr Cloud Compute 4 GB / 2 vCPU for a WordPress Blog</title>
+  <meta name="description" content="What the official data says about Vultr Cloud Compute 4 GB / 2 vCPU for a solo WordPress blogger, what it does not confirm, and what to check first." />
+  <link rel="canonical" href="https://hosts.fasthosting.info/hosts/vultr/cloud-compute-4-gb-2-vcpu/" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Vultr Cloud Compute 4 GB / 2 vCPU for a WordPress Blog" />
+  <meta property="og:description" content="What the official data says about Vultr Cloud Compute 4 GB / 2 vCPU for a solo WordPress blogger, what it does not confirm, and what to check first." />
+  <meta name="twitter:card" content="summary" />
+  <style>
+    :root { color-scheme: dark; --bg: #0b1220; --card: #111a2e; --card-2: #0f1729; --line: #1f2a40; --line-2: #2a3752; --ink: #f1f5f9; --text: #cbd5e1; --muted: #94a3b8; --link: #93c5fd; --accent: #60a5fa; --btn: #2563eb; --btn-hover: #1d4ed8; --self: #16233f; }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Helvetica Neue", Arial, sans-serif; font-size: 17px; line-height: 1.8; word-break: keep-all; overflow-wrap: break-word; }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:hover { color: #bfdbfe; }
+    .site-header { position: sticky; top: 0; z-index: 40; height: 56px; background: rgba(11, 18, 32, 0.94); border-bottom: 1px solid rgba(148, 163, 184, 0.16); }
+    @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+      .site-header { background: rgba(11, 18, 32, 0.68); -webkit-backdrop-filter: saturate(180%) blur(14px); backdrop-filter: saturate(180%) blur(14px); }
+    }
+    .site-header .bar { display: flex; align-items: center; gap: 16px; max-width: 1040px; height: 56px; margin: 0 auto; padding: 0 20px; }
+    .brand { flex: none; color: var(--ink); font-weight: 700; font-size: 0.95em; letter-spacing: -0.01em; text-decoration: none; }
+    .brand:hover { color: #fff; }
+    .head-title { flex: 1; min-width: 0; overflow: hidden; color: var(--muted); font-size: 0.85em; white-space: nowrap; text-overflow: ellipsis; }
+    .head-cta { flex: none; margin-left: auto; padding: 7px 14px; border: 1px solid var(--line-2); border-radius: 8px; color: var(--ink); font-size: 0.85em; font-weight: 600; line-height: 1.4; text-decoration: none; }
+    .head-cta:hover { border-color: var(--accent); color: #fff; }
+    main { display: block; max-width: 760px; margin: 0 auto; padding: 20px 20px 48px; }
+    .crumbs { margin: 0 0 18px; font-size: 0.82em; line-height: 1.5; }
+    .crumbs ol { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; color: var(--muted); }
+    .crumbs li { display: flex; gap: 6px; min-width: 0; }
+    .crumbs li + li::before { content: "/"; color: var(--line-2); }
+    .crumbs a { color: var(--muted); text-decoration: none; }
+    .crumbs a:hover { color: var(--ink); text-decoration: underline; }
+    .crumbs [aria-current] { color: var(--text); }
+    h1 { margin: 0 0 10px; color: var(--ink); font-size: clamp(1.6rem, 5vw, 2.25rem); line-height: 1.3; letter-spacing: -0.02em; }
+    h2 { margin: 52px 0 16px; color: var(--ink); font-size: 1.35rem; line-height: 1.4; letter-spacing: -0.01em; }
+    h3 { margin: 28px 0 8px; color: var(--ink); font-size: 1.1rem; line-height: 1.5; }
+    p { margin: 0 0 1.1em; }
+    ul { padding-left: 1.3em; }
+    li { margin: 4px 0; }
+    .page-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0 0 22px; color: var(--muted); font-size: 0.85em; }
+    .page-meta time { color: var(--text); }
+    .disclosure { margin: 0 0 20px; padding: 10px 14px; border-radius: 10px; background: var(--card-2); border: 1px solid var(--line); line-height: 1.6; color: var(--text) !important; }
+    .summary { margin: 0 0 28px; padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+    .summary-title { margin: 0 0 8px; color: var(--accent); font-size: 0.75em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .summary-lead { margin: 0 0 16px; color: var(--ink); font-size: 1.05em; font-weight: 600; line-height: 1.6; }
+    .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0; margin: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--card-2); }
+    .spec { margin: 0; padding: 12px 14px; background: var(--card-2); box-shadow: 1px 0 0 var(--line), 0 1px 0 var(--line); }
+    .spec dt { color: var(--muted); font-size: 0.72em; font-weight: 600; letter-spacing: 0.06em; line-height: 1.4; text-transform: uppercase; }
+    .spec dd { margin: 4px 0 0; color: var(--ink); font-size: 1em; font-weight: 600; line-height: 1.45; font-variant-numeric: tabular-nums; }
+    .hero { margin: 0 0 24px; }
+    .hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; background: var(--card); }
+    .hero figcaption { margin-top: 6px; color: var(--muted); font-size: 0.8em; }
+    .intro { font-size: 1.05em; color: var(--ink); }
+    .table-wrap { margin: 16px 0 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+    table { width: 100%; margin: 0; border-collapse: collapse; font-size: 0.92em; line-height: 1.55; font-variant-numeric: tabular-nums; }
+    th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    tr:last-child > th, tr:last-child > td { border-bottom: 0; }
+    thead th { background: #16213a; color: var(--ink); font-size: 0.85em; font-weight: 700; letter-spacing: 0.02em; }
+    tbody th { width: 38%; background: var(--card-2); color: var(--muted); font-weight: 600; }
+    td { color: var(--ink); }
+    .compare table { min-width: 620px; }
+    .compare td { white-space: nowrap; }
+    .compare td:first-child { min-width: 150px; max-width: 200px; white-space: normal; }
+    .compare tr.self td { background: var(--self); font-weight: 600; }
+    .compare th:first-child, .compare td:first-child { position: sticky; left: 0; z-index: 1; background: var(--card); box-shadow: 1px 0 0 var(--line); }
+    .compare thead th:first-child { background: #16213a; }
+    .compare tr.self td:first-child { background: var(--self); }
+    .swipe { display: none; margin: 0 0 4px; color: var(--muted); font-size: 0.8em; text-align: right; }
+    .verified { color: var(--muted); font-size: 0.85em; line-height: 1.6; }
+    #offer { scroll-margin-top: 72px; }
+    .cta { background: var(--card) !important; border-color: var(--line-2) !important; border-radius: 12px !important; }
+    .cta > a { display: inline-block; padding: 12px 20px; border-radius: 10px; background: var(--btn); color: #fff; font-weight: 700; text-decoration: none; line-height: 1.4; }
+    .cta > a:hover { background: var(--btn-hover); color: #fff; }
+    .cta .disclosure { margin: 12px 0 0; }
+    section { margin: 0; }
+    .toc { margin: 0 0 8px; padding: 16px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+    .toc-title { margin: 0 0 6px; color: var(--muted); font-size: 0.75em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .toc ol { margin: 0; padding-left: 1.3em; display: grid; gap: 2px; color: var(--muted); }
+    .toc a { color: var(--text); text-decoration: none; }
+    .toc a:hover { color: var(--ink); text-decoration: underline; }
+    h2[id] { scroll-margin-top: 72px; }
+    .acc { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .acc > li { margin: 0; }
+    .acc details { border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+    .acc details[open] { border-color: var(--line-2); }
+    .acc summary { cursor: pointer; display: flex; gap: 10px; align-items: baseline; padding: 14px 44px 14px 16px; position: relative; color: var(--ink); font-weight: 600; line-height: 1.5; list-style: none; }
+    .acc summary::-webkit-details-marker { display: none; }
+    .acc summary::after { content: "+"; position: absolute; right: 16px; top: 12px; color: var(--accent); font-size: 1.3em; line-height: 1; }
+    .acc details[open] > summary::after { content: "\2212"; }
+    .acc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 12px; }
+    .acc details > p { margin: 0; padding: 0 16px 16px; }
+    .step { flex: none; color: var(--accent); font-size: 0.72em; font-weight: 700; letter-spacing: 0.08em; }
+    .sources { margin: 48px 0 0; padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--card-2); }
+    .sources-title { margin: 0 0 8px; color: var(--muted); font-size: 0.75em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .sources ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+    .sources li { margin: 0; }
+    .sources p { margin: 8px 0 0; color: var(--muted); font-size: 0.8em; }
+    .about { margin: 24px 0 0; padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; }
+    .about-title { margin: 0 0 6px; color: var(--ink); font-size: 0.95em; font-weight: 700; }
+    .about p { margin: 0; color: var(--muted); font-size: 0.88em; line-height: 1.7; }
+    .back-to-offer { margin: 32px 0 0; text-align: center; }
+    .back-to-offer a { display: inline-block; padding: 10px 18px; border: 1px solid var(--line-2); border-radius: 999px; color: var(--ink); font-weight: 600; text-decoration: none; }
+    .back-to-offer a:hover { border-color: var(--accent); }
+    .related { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .related h2 { margin-top: 0; }
+    .related ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .related li { margin: 0; }
+    .related a { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 100%; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); color: var(--ink); font-weight: 600; line-height: 1.5; text-decoration: none; }
+    .related a::after { content: "\2192"; color: var(--accent); }
+    .related a:hover { border-color: var(--accent); }
+    .site-footer { max-width: 760px; margin: 0 auto; padding: 20px 20px 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    .site-footer a { color: var(--muted); }
+    .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; width: 100%; padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .sticky-cta.translate-y-full { transform: translateY(100%); visibility: hidden; pointer-events: none; }
+    .sticky-cta a { display: block; max-width: 560px; margin: 0 auto; padding: 14px 20px; border-radius: 12px; background: var(--btn); color: #fff; font-weight: 700; line-height: 1.4; text-align: center; text-decoration: none; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45); }
+    .sticky-cta a:hover { background: var(--btn-hover); color: #fff; }
+    @media (min-width: 768px) { .sticky-cta { display: none; } }
+    @media (max-width: 767px) { body.has-sticky-cta { padding-bottom: 84px; } }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .site-header .bar { padding: 0 16px; }
+      .head-title { display: none; }
+      main { padding: 16px 16px 40px; }
+      h2 { margin-top: 44px; font-size: 1.22rem; }
+      .summary { padding: 16px; }
+      .specs { grid-template-columns: 1fr 1fr; }
+      .swipe { display: block; }
+      thead th { white-space: nowrap; }
+      .cta > a { display: block; text-align: center; }
+      .site-footer { padding: 20px 16px 28px; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="../../../">⌂ Home</a>
+      <span class="head-title">Vultr Cloud Compute 4 GB / 2 vCPU</span>
+      <a class="head-cta" href="#offer">See pricing</a>
+    </div>
+  </header>
+  <main>
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol><li><a href="../../../">Home</a></li><li>Cloud VPS</li><li aria-current="page">Vultr Cloud Compute 4 GB / 2 vCPU</li></ol>
+    </nav>
+    <h1>Vultr Cloud Compute 4 GB / 2 vCPU for a WordPress Blog</h1>
+    <p class="page-meta"><span>🔄 Last updated: <time datetime="2026-10-08">10/8/2026</time></span><span>Prices checked 10/8/2026</span></p>
+    <p class="disclosure" style="font-size:0.85em;color:#64748b">Disclosure: This page contains affiliate links. If you buy or sign up through them, we may earn a commission at no extra cost to you.</p>
+    <aside class="summary" aria-label="Key facts at a glance">
+      <p class="summary-title">Key facts at a glance</p>
+      <p class="summary-lead">What the official data says about Vultr Cloud Compute 4 GB / 2 vCPU for a solo WordPress blogger, what it does not confirm, and what to check first.</p>
+      <dl class="specs"><div class="spec"><dt>Host</dt><dd>Vultr</dd></div><div class="spec"><dt>Intro price (monthly)</dt><dd>$20.00</dd></div><div class="spec"><dt>Renewal price (monthly)</dt><dd>$20.00</dd></div><div class="spec"><dt>Term</dt><dd>1 month</dd></div><div class="spec"><dt>Prices checked</dt><dd>10/8/2026</dd></div></dl>
+    </aside>
+    
+    <p class="intro">Vultr Cloud Compute 4 GB / 2 vCPU is a Cloud VPS plan from Vultr with a term of 1 month. If you run a WordPress blog on your own and would rather not manage a server, this page explains what the official data confirms about this plan, what it leaves out, and what to check before you sign up. It uses only the official plan data. It does not include testing, reviews, or guesses.</p>
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol><li><a href="#s1">What the official data says about this plan</a></li><li><a href="#s2">Who this plan suits</a></li><li><a href="#s3">What to check before signing up</a></li><li><a href="#s4">How it compares with DigitalOcean Basic plans</a></li><li><a href="#s5">Running WordPress without managing a server: what is not confirmed</a></li><li><a href="#guide">Practical setup guide</a></li><li><a href="#faq">Frequently asked questions</a></li></ol>
+    </nav>
+    <section id="offer">
+      <h2>Plan details (official data)</h2>
+      <div class="table-wrap"><table>
+        <tr><th>Plan</th><td>Vultr Cloud Compute 4 GB / 2 vCPU</td></tr>
+        <tr><th>Host</th><td>Vultr</td></tr>
+        <tr><th>Category</th><td>Cloud VPS</td></tr>
+        <tr><th>Intro price (monthly)</th><td>$20.00</td></tr>
+        <tr><th>Renewal price (monthly)</th><td>$20.00</td></tr>
+        <tr><th>Term</th><td>1 month</td></tr>
+      </table></div>
+      <h3>Inclusions and features (official data)</h3>
+      <ul><li>Regular Performance (previous-gen Intel, regular SSD)</li><li>flat monthly price (no intro discount)</li></ul>
+      <p class="verified">Prices were checked on Vultr&#39;s official pricing page on 10/8/2026. The intro price usually applies when you pay for the term shown, and the plan may renew at the renewal price. Prices change, so confirm on the official site before you buy.</p>
+      <div class="cta" style="margin:16px 0;padding:16px;border:1px solid #e2e8f0;border-radius:8px"><a href="https://www.vultr.com/?ref=9926838" rel="sponsored nofollow noopener" target="_self">See current Vultr pricing and plan details</a></div>
+    </section>
+    <section>
+      <h2 id="compare">Compare plans in this category (official data)</h2>
+      <p class="swipe" aria-hidden="true">Swipe the table to see more →</p>
+      <div class="table-wrap compare"><table>
+        <thead><tr><th>Plan</th><th>Host</th><th>Intro price (monthly)</th><th>Renewal price (monthly)</th><th>Term</th></tr></thead>
+        <tbody>
+        <tr class="self"><td>Vultr Cloud Compute 4 GB / 2 vCPU (this plan)</td><td>Vultr</td><td>$20.00</td><td>$20.00</td><td>1 month</td></tr>
+        <tr><td>DigitalOcean Basic 512 MiB</td><td>DigitalOcean</td><td>$4.00</td><td>$4.00</td><td>1 month</td></tr>
+        <tr><td>DigitalOcean Basic 1 GiB</td><td>DigitalOcean</td><td>$6.00</td><td>$6.00</td><td>1 month</td></tr>
+        <tr><td>DigitalOcean Basic 2 GiB</td><td>DigitalOcean</td><td>$12.00</td><td>$12.00</td><td>1 month</td></tr>
+        <tr><td>DigitalOcean Basic 2 GiB / 2 vCPU</td><td>DigitalOcean</td><td>$18.00</td><td>$18.00</td><td>1 month</td></tr>
+        </tbody>
+      </table></div>
+      <p class="verified">All values in this table come from each host&#39;s official pricing page. This plan was checked on 10/8/2026; every compared plan was checked within the last 60 days.</p>
+    </section>
+    <section>
+      <h2 id="s1">What the official data says about this plan</h2>
+      <p>The official data lists this plan as Vultr Cloud Compute 4 GB / 2 vCPU from the provider Vultr, in the Cloud VPS category. The listed term is 1 month.</p>
+      <p>The features listed in the official data are exactly these: Regular Performance (previous-gen Intel, regular SSD), and flat monthly price (no intro discount). Nothing else is listed, so this page does not assume any other included services.</p>
+    </section>
+    <section>
+      <h2 id="s2">Who this plan suits</h2>
+      <p>This plan may suit a solo blogger who wants a Cloud VPS on a short term and is comfortable taking care of the setup or is willing to learn. The listed term of 1 month means you are not committing to a long contract in the official data.</p>
+      <p>The angle of this page is launching a blog without managing a server. The official data does not confirm that this plan includes managed WordPress, a one-click WordPress installer, a control panel, automatic updates, or server management. A Cloud VPS often leaves setup and upkeep to the account owner, so if you want a hands-off blog, confirm with Vultr what is and is not handled for you before you sign up.</p>
+      <p>If you already know how to install WordPress on a server, or you plan to use a separate tool or service to manage it, the listed features and the 1 month term give you a clear starting point to compare against.</p>
+    </section>
+    <section>
+      <h2 id="s3">What to check before signing up</h2>
+      <p>Renewal price: the official data lists a flat monthly price (no intro discount). Even so, intro prices and renewal prices can differ across hosting plans, so read both the price and the renewal price in the verified table on this page before you decide.</p>
+      <p>Term length: the listed term is 1 month. Confirm the term in the table and on the provider&#39;s checkout page so you know how billing works.</p>
+      <p>What is included: the official data lists Regular Performance (previous-gen Intel, regular SSD) and a flat monthly price (no intro discount). It does not list backups, an SSL certificate, email hosting, a control panel, WordPress installation, or support details. If any of these matter for your blog, check with Vultr before you sign up.</p>
+    </section>
+    <section>
+      <h2 id="s4">How it compares with DigitalOcean Basic plans</h2>
+      <p>The alternatives in the official data are DigitalOcean Basic 512 MiB, DigitalOcean Basic 1 GiB, DigitalOcean Basic 2 GiB, and DigitalOcean Basic 2 GiB / 2 vCPU. All are in the Cloud VPS category, and all list a term of 1 month, the same as Vultr Cloud Compute 4 GB / 2 vCPU.</p>
+      <p>Each DigitalOcean plan lists one feature: Flat monthly price (no intro discount). The Vultr plan lists the same pricing structure as flat monthly price (no intro discount), and it also lists Regular Performance (previous-gen Intel, regular SSD). The official data for the DigitalOcean plans does not list processor generation or storage type.</p>
+      <p>The plan names show different memory and vCPU figures. The official data does not explain how those figures affect a WordPress blog. If you are starting a small blog and want to compare entry options, the DigitalOcean Basic plans give several sizes to look at. If you want the plan whose data lists its processor and storage type, Vultr Cloud Compute 4 GB / 2 vCPU is the one that lists them. None of these plans list managed WordPress, backups, or SSL in the official data. Compare prices and renewal prices in the table.</p>
+    </section>
+    <section>
+      <h2 id="s5">Running WordPress without managing a server: what is not confirmed</h2>
+      <p>The official data for this plan does not mention WordPress, SSH, root access, a control panel, managed services, automatic backups, or SSL certificates. That does not mean these things are unavailable. It means this page cannot confirm them.</p>
+      <p>If your goal is to write posts and not touch server settings, ask Vultr directly whether WordPress setup, updates, security patches, and backups are handled for you on this plan, or whether you would manage them yourself.</p>
+    </section>
+    <section class="guide">
+      <h2 id="guide">Practical setup guide</h2>
+      <ol class="acc">
+        <li><details open><summary><span class="step">STEP 1</span><span>Point your domain to the server</span></summary>
+        <p>Update your domain&#39;s nameservers or DNS records at your registrar so the domain points to your new server, following the instructions Vultr provides. DNS changes can take some time to spread. To see which nameservers your domain uses now, run this on your own computer, replacing example.com with your domain: dig +short NS example.com</p></details></li>
+        <li><details><summary><span class="step">STEP 2</span><span>Enable an SSL certificate</span></summary>
+        <p>The official data does not confirm that an SSL certificate is included, so check with Vultr how to set one up for this plan. Once it is active, confirm your blog loads over HTTPS. Replace example.com with your domain and run this on your own computer to view the response headers and any redirects: curl -I https://example.com</p></details></li>
+        <li><details><summary><span class="step">STEP 3</span><span>Find out how backups and restores work</span></summary>
+        <p>The official data does not list backups for this plan. Before you publish posts, find out whether backups are available, whether they cost extra, and how a restore works. Keep your own copy of your WordPress content as well, for example through the WordPress export tool.</p></details></li>
+        <li><details><summary><span class="step">STEP 4</span><span>Confirm who maintains WordPress and the server</span></summary>
+        <p>Because the official data does not confirm managed services, clarify whether you are responsible for WordPress updates, plugin updates, and server security. If you want to avoid managing a server, settle this before you start writing.</p></details></li>
+        <li><details><summary><span class="step">STEP 5</span><span>Note your renewal date and renewal price</span></summary>
+        <p>Write down when your plan renews and what the renewal price is, using the verified table on this page and your account billing details. The official data lists a flat monthly price with no intro discount, but checking the renewal terms ahead of time avoids surprises.</p></details></li>
+      </ol>
+    </section>
+    <section class="faq">
+      <h2 id="faq">Frequently asked questions</h2>
+      <ul class="acc">
+        <li><details open><summary>Does Vultr Cloud Compute 4 GB / 2 vCPU come with WordPress installed?</summary>
+        <p>The official data does not mention WordPress or an installer. Check with Vultr before signing up if you need WordPress set up for you.</p></details></li>
+        <li><details><summary>Is this a managed plan where the server is maintained for me?</summary>
+        <p>The official data lists the category as Cloud VPS and does not mention managed services. Confirm with Vultr who handles updates, security, and maintenance.</p></details></li>
+        <li><details><summary>Is there an intro discount that changes at renewal?</summary>
+        <p>The official data lists a flat monthly price (no intro discount). Still, read both the price and the renewal price in the verified table on this page before deciding.</p></details></li>
+        <li><details><summary>What is the term length?</summary>
+        <p>The official data lists a term of 1 month for this plan and for each DigitalOcean alternative.</p></details></li>
+        <li><details><summary>Are backups and SSL included?</summary>
+        <p>The official data does not list backups or an SSL certificate for this plan. Check with Vultr how backups, restores, and SSL work before you sign up.</p></details></li>
+      </ul>
+    </section>
+    <aside class="sources" aria-label="Further reading (external references)">
+      <p class="sources-title">Further reading (external references)</p>
+      <ul><li><a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="noopener">Virtual private server · Wikipedia ↗</a></li></ul>
+      <p>External references open in a new tab. We have no affiliate relationship with them.</p>
+    </aside>
+    <aside class="about">
+      <p class="about-title">How we check this page</p>
+      <p>Intro prices, renewal prices and terms are entered only after a person checks them on the host&#39;s official pricing page, and the check date is shown. Prices older than 60 days are not republished until they are checked again. The explanations are drafted by AI from the official data only, and an automatic check rejects numbers not in the data, made-up user reviews and hype. This site is supported by affiliate commissions; the table values are copied from official data regardless of commission.</p>
+    </aside>
+    <p class="back-to-offer"><a href="#offer">↑ Back to pricing and the official link</a></p>
+  </main>
+  <footer class="site-footer"><a href="../../../">⌂ Home</a><a href="#top">Back to top</a></footer>
+  <div id="sticky-cta" class="sticky-cta translate-y-full" hidden>
+    <a href="#offer">Check the current price</a>
+  </div>
+  <script>
+  (function () {
+    var box = document.getElementById('sticky-cta');
+    var src = document.querySelector('.cta a[rel~="sponsored"]');
+    if (!box || !src) return;
+    var a = box.querySelector('a');
+    a.href = src.href; a.rel = src.rel; a.target = '_self';
+    box.hidden = false; document.body.classList.add('has-sticky-cta');
+    var near = false;
+    function update() { box.classList.toggle('translate-y-full', !(window.scrollY > 100 && !near)); }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) { near = e[0].isIntersecting; update(); }).observe(src.closest('.cta') || src);
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+  </script>
+  
+</body>
+</html>
