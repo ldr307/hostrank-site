@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DigitalOcean Basic 2 GiB / 2 vCPU for Static Site Deploys</title>
-  <meta name="description" content="What the official data says about DigitalOcean Basic 2 GiB / 2 vCPU for static sites, plus how to check DNS and HTTPS from the terminal after deploying." />
+  <title>DigitalOcean Basic 2 GiB / 2 vCPU: Moving WordPress to VPS</title>
+  <meta name="description" content="What changes when a WordPress site moves from shared hosting to DigitalOcean Basic 2 GiB / 2 vCPU: resources, alternatives, security updates and backups." />
   <link rel="canonical" href="https://hosts.fasthosting.info/hosts/digitalocean/basic-2-gib-2-vcpu/" />
   <meta name="theme-color" content="#0b1220" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="DigitalOcean Basic 2 GiB / 2 vCPU for Static Site Deploys" />
-  <meta property="og:description" content="What the official data says about DigitalOcean Basic 2 GiB / 2 vCPU for static sites, plus how to check DNS and HTTPS from the terminal after deploying." />
+  <meta property="og:title" content="DigitalOcean Basic 2 GiB / 2 vCPU: Moving WordPress to VPS" />
+  <meta property="og:description" content="What changes when a WordPress site moves from shared hosting to DigitalOcean Basic 2 GiB / 2 vCPU: resources, alternatives, security updates and backups." />
   <meta name="twitter:card" content="summary" />
   <style>
     :root { color-scheme: dark; --bg: #0b1220; --card: #111a2e; --card-2: #0f1729; --line: #1f2a40; --line-2: #2a3752; --ink: #f1f5f9; --text: #cbd5e1; --muted: #94a3b8; --link: #93c5fd; --accent: #60a5fa; --btn: #2563eb; --btn-hover: #1d4ed8; --self: #16233f; }
@@ -49,9 +49,9 @@
     .summary-title { margin: 0 0 8px; color: var(--accent); font-size: 0.75em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
     .summary-lead { margin: 0 0 16px; color: var(--ink); font-size: 1.05em; font-weight: 600; line-height: 1.6; }
     .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0; margin: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--card-2); }
-    .spec { margin: 0; padding: 12px 14px; background: var(--card-2); box-shadow: 1px 0 0 var(--line), 0 1px 0 var(--line); }
+    .spec { min-width: 0; margin: 0; padding: 12px 14px; background: var(--card-2); box-shadow: 1px 0 0 var(--line), 0 1px 0 var(--line); }
     .spec dt { color: var(--muted); font-size: 0.72em; font-weight: 600; letter-spacing: 0.06em; line-height: 1.4; text-transform: uppercase; }
-    .spec dd { margin: 4px 0 0; color: var(--ink); font-size: 1em; font-weight: 600; line-height: 1.45; font-variant-numeric: tabular-nums; }
+    .spec dd { margin: 4px 0 0; color: var(--ink); font-size: 1em; font-weight: 600; line-height: 1.45; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
     .hero { margin: 0 0 24px; }
     .hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; background: var(--card); }
     .hero figcaption { margin-top: 6px; color: var(--muted); font-size: 0.8em; }
@@ -148,19 +148,19 @@
     <nav class="crumbs" aria-label="Breadcrumb">
       <ol><li><a href="../../../">Home</a></li><li>Cloud VPS</li><li aria-current="page">DigitalOcean Basic 2 GiB / 2 vCPU</li></ol>
     </nav>
-    <h1>DigitalOcean Basic 2 GiB / 2 vCPU for Static Site Deploys</h1>
-    <p class="page-meta"><span>🔄 Last updated: <time datetime="2026-10-08">10/8/2026</time></span><span>Prices checked 10/1/2026</span></p>
+    <h1>DigitalOcean Basic 2 GiB / 2 vCPU: Moving WordPress to VPS</h1>
+    <p class="page-meta"><span>🔄 Last updated: <time datetime="2026-10-10">Oct 10, 2026</time></span><span>Prices checked Oct 1, 2026</span></p>
     <p class="disclosure" style="font-size:0.85em;color:#64748b">Disclosure: This page contains affiliate links. If you buy or sign up through them, we may earn a commission at no extra cost to you.</p>
     <aside class="summary" aria-label="Key facts at a glance">
       <p class="summary-title">Key facts at a glance</p>
-      <p class="summary-lead">What the official data says about DigitalOcean Basic 2 GiB / 2 vCPU for static sites, plus how to check DNS and HTTPS from the terminal after deploying.</p>
-      <dl class="specs"><div class="spec"><dt>Host</dt><dd>DigitalOcean</dd></div><div class="spec"><dt>Intro price (monthly)</dt><dd>$18.00</dd></div><div class="spec"><dt>Renewal price (monthly)</dt><dd>$18.00</dd></div><div class="spec"><dt>Term</dt><dd>1 month</dd></div><div class="spec"><dt>Prices checked</dt><dd>10/1/2026</dd></div></dl>
+      <p class="summary-lead">What changes when a WordPress site moves from shared hosting to DigitalOcean Basic 2 GiB / 2 vCPU: resources, alternatives, security updates and backups.</p>
+      <dl class="specs"><div class="spec"><dt>Host</dt><dd>DigitalOcean</dd></div><div class="spec"><dt>Price (monthly)</dt><dd>$18.00</dd></div><div class="spec"><dt>Term</dt><dd>1 month</dd></div><div class="spec"><dt>CPU</dt><dd>2 vCPU</dd></div><div class="spec"><dt>RAM</dt><dd>2 GiB</dd></div><div class="spec"><dt>Storage</dt><dd>60 GiB SSD</dd></div><div class="spec"><dt>Prices checked</dt><dd>Oct 1, 2026</dd></div></dl>
     </aside>
     
-    <p class="intro">This page is for frontend developers who want to deploy static sites to the DigitalOcean Basic 2 GiB / 2 vCPU plan and verify DNS and HTTPS from the terminal. The official data for this plan is short. It lists the provider as DigitalOcean, the category as Cloud VPS, the term as 1 month, and a single feature: Flat monthly price (no intro discount). Everything below sticks to that data. Where the data is silent, the page says so, so you know what to confirm before signing up. Prices, renewal prices and terms appear in the verified table on this page, not in the text.</p>
+    <p class="intro">Moving a WordPress site from shared hosting to a VPS shifts the work. On shared hosting, the provider usually handles the server, its updates and often the backups. On a self-managed cloud VPS such as DigitalOcean Basic 2 GiB / 2 vCPU, you get the server and its listed resources, and the rest becomes your job: installing the web stack, applying security updates, running a firewall and keeping backups you can restore. This page sets out what the plan includes according to its official pricing details, how it lines up against similar Cloud VPS plans, and what to plan for before you move your site.</p>
     <nav class="toc" aria-label="On this page">
       <p class="toc-title">On this page</p>
-      <ol><li><a href="#s1">What the official data confirms</a></li><li><a href="#s2">Who this plan may suit</a></li><li><a href="#s3">What to check before signing up</a></li><li><a href="#s4">How it compares with the listed alternatives</a></li><li><a href="#s5">Checking DNS and HTTPS from the terminal</a></li><li><a href="#guide">Practical setup guide</a></li><li><a href="#faq">Frequently asked questions</a></li></ol>
+      <ol><li><a href="#s1">What the DigitalOcean Basic 2 GiB / 2 vCPU plan includes</a></li><li><a href="#s2">Who this plan suits</a></li><li><a href="#s3">What changes when you manage the server yourself</a></li><li><a href="#s4">Billing and renewal: what to check before signing up</a></li><li><a href="#s5">How it compares with similar Cloud VPS plans</a></li><li><a href="#guide">Practical setup guide</a></li><li><a href="#faq">Frequently asked questions</a></li></ol>
     </nav>
     <section id="offer">
       <h2>Plan details (official data)</h2>
@@ -168,84 +168,90 @@
         <tr><th>Plan</th><td>DigitalOcean Basic 2 GiB / 2 vCPU</td></tr>
         <tr><th>Host</th><td>DigitalOcean</td></tr>
         <tr><th>Category</th><td>Cloud VPS</td></tr>
-        <tr><th>Intro price (monthly)</th><td>$18.00</td></tr>
-        <tr><th>Renewal price (monthly)</th><td>$18.00</td></tr>
+        <tr><th>Price (monthly)</th><td>$18.00</td></tr>
         <tr><th>Term</th><td>1 month</td></tr>
+        <tr><th>CPU</th><td>2 vCPU</td></tr>
+        <tr><th>RAM</th><td>2 GiB</td></tr>
+        <tr><th>Storage</th><td>60 GiB SSD</td></tr>
       </table></div>
       <h3>Inclusions and features (official data)</h3>
       <ul><li>Flat monthly price (no intro discount)</li></ul>
-      <p class="verified">Prices were checked on DigitalOcean&#39;s official pricing page on 10/1/2026. The intro price usually applies when you pay for the term shown, and the plan may renew at the renewal price. Prices change, so confirm on the official site before you buy.</p>
+      <p class="verified">Prices were checked on DigitalOcean&#39;s official pricing page on Oct 1, 2026. The renewal price listed there is the same as the sign-up price (no intro discount). Prices change, so confirm on the official site before you buy.</p>
       <div class="cta" style="margin:16px 0;padding:16px;border:1px solid #e2e8f0;border-radius:8px"><a href="https://m.do.co/c/0fd8f8f793a1" rel="sponsored nofollow noopener" target="_self">See current DigitalOcean pricing and plan details</a></div>
     </section>
     <section>
       <h2 id="compare">Compare plans in this category (official data)</h2>
       <p class="swipe" aria-hidden="true">Swipe the table to see more →</p>
       <div class="table-wrap compare"><table>
-        <thead><tr><th>Plan</th><th>Host</th><th>Intro price (monthly)</th><th>Renewal price (monthly)</th><th>Term</th></tr></thead>
+        <thead><tr><th>Plan</th><th>Host</th><th>Price (monthly)</th><th>Term</th><th>CPU</th><th>RAM</th><th>Storage</th><th>Bandwidth</th></tr></thead>
         <tbody>
-        <tr class="self"><td>DigitalOcean Basic 2 GiB / 2 vCPU (this plan)</td><td>DigitalOcean</td><td>$18.00</td><td>$18.00</td><td>1 month</td></tr>
-        <tr><td>DigitalOcean Basic 512 MiB</td><td>DigitalOcean</td><td>$4.00</td><td>$4.00</td><td>1 month</td></tr>
-        <tr><td>DigitalOcean Basic 1 GiB</td><td>DigitalOcean</td><td>$6.00</td><td>$6.00</td><td>1 month</td></tr>
-        <tr><td>DigitalOcean Basic 2 GiB</td><td>DigitalOcean</td><td>$12.00</td><td>$12.00</td><td>1 month</td></tr>
-        <tr><td>Vultr Cloud Compute 0.5 GB</td><td>Vultr</td><td>$3.50</td><td>$3.50</td><td>1 month</td></tr>
+        <tr class="self"><td>DigitalOcean Basic 2 GiB / 2 vCPU (this plan)</td><td>DigitalOcean</td><td>$18.00</td><td>1 month</td><td>2 vCPU</td><td>2 GiB</td><td>60 GiB SSD</td><td>Not listed</td></tr>
+        <tr><td>Vultr Cloud Compute 2 GB</td><td>Vultr</td><td>$10.00</td><td>1 month</td><td>1 vCPU</td><td>2 GB</td><td>55 GB SSD</td><td>2 TB</td></tr>
+        <tr><td>DigitalOcean Basic 2 GiB</td><td>DigitalOcean</td><td>$12.00</td><td>1 month</td><td>Not listed</td><td>2 GiB</td><td>50 GiB SSD</td><td>Not listed</td></tr>
+        <tr><td>Vultr Cloud Compute 2 GB / 2 vCPU</td><td>Vultr</td><td>$15.00</td><td>1 month</td><td>2 vCPU</td><td>2 GB</td><td>65 GB SSD</td><td>3 TB</td></tr>
+        <tr><td>Vultr Cloud Compute 4 GB / 2 vCPU</td><td>Vultr</td><td>$20.00</td><td>1 month</td><td>2 vCPU</td><td>4 GB</td><td>80 GB SSD</td><td>3 TB</td></tr>
         </tbody>
       </table></div>
-      <p class="verified">All values in this table come from each host&#39;s official pricing page. This plan was checked on 10/1/2026; every compared plan was checked within the last 60 days.</p>
+      <p class="verified">All values in this table come from each host&#39;s official pricing page. This plan was checked on Oct 1, 2026; every compared plan was checked within the last 60 days.</p>
     </section>
     <section>
-      <h2 id="s1">What the official data confirms</h2>
-      <p>The official data lists DigitalOcean Basic 2 GiB / 2 vCPU in the Cloud VPS category, with a term of 1 month. The only listed feature is Flat monthly price (no intro discount).</p>
-      <p>The plan name includes 2 GiB / 2 vCPU, but the features list does not describe these resources any further. The official data also does not list storage, bandwidth, server locations, an SSL certificate, backups, a control panel, or SSH access. If any of these matter for your deploy workflow, confirm them with DigitalOcean before signing up.</p>
+      <h2 id="s1">What the DigitalOcean Basic 2 GiB / 2 vCPU plan includes</h2>
+      <p>DigitalOcean lists this plan in the Cloud VPS category with 2 vCPU, 2 GiB of RAM and 60 GiB SSD storage. The listed feature is a &quot;Flat monthly price (no intro discount)&quot;, and the term is 1 month.</p>
+      <p>No bandwidth allowance is listed for this plan in the official data, so if your WordPress site serves a lot of media or traffic, check the transfer allowance on the DigitalOcean pricing page before signing up.</p>
+      <p>Because this is a self-managed server, you have SSH and root access to configure it the way your site needs. That freedom also means no one else is applying updates or watching the server for you unless you arrange it.</p>
     </section>
     <section>
-      <h2 id="s2">Who this plan may suit</h2>
-      <p>Because the category is Cloud VPS, this plan may suit a frontend developer who is comfortable managing a server and wants a place to host static builds, such as the output folder of a static site generator or a single-page app build.</p>
-      <p>The 1 month term may appeal if you prefer not to commit to a long contract while you test a deploy setup. The official data does not confirm whether the plan comes with a preconfigured web server or deploy tooling, so plan on checking what you need to set up yourself.</p>
+      <h2 id="s2">Who this plan suits</h2>
+      <p>This plan fits a WordPress site owner who has outgrown shared hosting and is ready to look after a Linux server, or who is willing to learn. If you are comfortable connecting over SSH, editing configuration files and keeping a routine for updates and backups, a plan with 2 vCPU and 2 GiB of RAM gives you a dedicated slice of resources rather than a shared account.</p>
+      <p>If you would rather not handle server maintenance at all, a self-managed VPS adds work compared with shared hosting. In that case, weigh the time you will spend on upkeep against the control you gain.</p>
     </section>
     <section>
-      <h2 id="s3">What to check before signing up</h2>
-      <p>Read the price, the renewal price and the term in the verified table on this page. The listed feature is Flat monthly price (no intro discount), but on many hosting plans the intro price and the renewal price can differ, so it is worth confirming both in the table rather than assuming.</p>
-      <p>Also check what is included. The official data does not list an SSL certificate, backups, or managed DNS, all of which affect how you serve a static site over HTTPS and how you recover from a bad deploy.</p>
+      <h2 id="s3">What changes when you manage the server yourself</h2>
+      <p>Setup: shared hosting usually arrives with a web server, PHP and a database ready to go. On a VPS you choose and install that stack yourself, then create the database and copy your WordPress files and database over. Build and test the new copy of the site before you change any DNS records, so visitors keep reaching the old site until the new one works.</p>
+      <p>Security updates: the operating system, web server, PHP and database all need patches. Turn on automatic security updates where your distribution supports them, check in regularly, and keep WordPress core, themes and plugins updated as well. A firewall that only allows SSH, HTTP and HTTPS reduces what is exposed.</p>
+      <p>Backups: the official data does not confirm whether backups or snapshots are included with this plan, so check what DigitalOcean offers and whether it costs extra. Either way, keep your own copies of the WordPress database and files off the server, and practice a restore so you know the backups actually work.</p>
     </section>
     <section>
-      <h2 id="s4">How it compares with the listed alternatives</h2>
-      <p>DigitalOcean Basic 512 MiB, DigitalOcean Basic 1 GiB and DigitalOcean Basic 2 GiB share the same official data fields as this plan: category Cloud VPS, term 1 month, and the feature Flat monthly price (no intro discount). The official data does not describe how they differ beyond their names, so compare the names and the verified price table to choose a size that fits your project.</p>
-      <p>Vultr Cloud Compute 0.5 GB is also a Cloud VPS with a 1 month term. Its features are listed as Regular Performance (previous-gen Intel, regular SSD) and flat monthly price (no intro discount). The official data for the DigitalOcean plans does not list processor or storage details, so a direct hardware comparison is not possible from this data alone.</p>
-      <p>If you want to stay with one provider and pick a size by name, the DigitalOcean options sit side by side. If the hardware description in the Vultr listing matters to you, that information is only stated for the Vultr plan. No option is declared a winner here; the right fit depends on your project and what the price table shows.</p>
+      <h2 id="s4">Billing and renewal: what to check before signing up</h2>
+      <p>The plan lists a &quot;Flat monthly price (no intro discount)&quot; with a term of 1 month, and the renewal price is the same as the intro price. The billing method itself is not described in the official data, so read how charges are calculated on the DigitalOcean pricing page before you commit.</p>
+      <p>The current price is shown in the price table on this page.</p>
     </section>
     <section>
-      <h2 id="s5">Checking DNS and HTTPS from the terminal</h2>
-      <p>For a static site, the two most common post-deploy problems are a domain still pointing at old nameservers and HTTPS not responding as expected. Both can be checked from your local machine without logging into the server.</p>
-      <p>The setup guide below shows one command for checking nameservers and one for checking HTTPS response headers. Replace example.com with your own domain each time.</p>
+      <h2 id="s5">How it compares with similar Cloud VPS plans</h2>
+      <p>DigitalOcean Basic 2 GiB lists 2 GiB of RAM and 50 GiB SSD storage with a &quot;Flat monthly price (no intro discount)&quot; and a term of 1 month. No CPU count is listed for it in the data. Against it, DigitalOcean Basic 2 GiB / 2 vCPU lists 2 vCPU and 60 GiB SSD, so it may suit a site that wants a stated CPU allocation and more storage within the same provider.</p>
+      <p>Vultr Cloud Compute 2 GB lists 1 vCPU, 2 GB of RAM, 55 GB SSD and 2 TB of bandwidth, with the feature &quot;Regular Performance (previous-gen Intel, regular SSD)&quot; and a flat monthly price (no intro discount) on a term of 1 month. It can suit a smaller WordPress site where a stated bandwidth figure matters to you.</p>
+      <p>Vultr Cloud Compute 2 GB / 2 vCPU lists 2 vCPU, 2 GB of RAM, 65 GB SSD and 3 TB of bandwidth, with the same &quot;Regular Performance (previous-gen Intel, regular SSD)&quot; feature and a term of 1 month. It lines up with the DigitalOcean Basic 2 GiB / 2 vCPU plan on vCPU count and adds a listed bandwidth figure.</p>
+      <p>Vultr Cloud Compute 4 GB / 2 vCPU lists 2 vCPU, 4 GB of RAM, 80 GB SSD and 3 TB of bandwidth, with the same feature wording and a term of 1 month. It may suit a WordPress site running many plugins, WooCommerce or object caching that needs more memory than the 2 GB plans list.</p>
+      <p>All five plans have a renewal price that is the same as the intro price. Compare current prices in the price table rather than relying on resources alone.</p>
     </section>
     <section class="guide">
       <h2 id="guide">Practical setup guide</h2>
       <ol class="acc">
-        <li><details open><summary><span class="step">STEP 1</span><span>Point your domain at the server</span></summary>
-        <p>Decide whether you will switch nameservers or edit DNS records at your current registrar, then make the change there. Replace example.com with your own domain, then run this from your local terminal to see which nameservers it uses now: dig +short NS example.com</p></details></li>
-        <li><details><summary><span class="step">STEP 2</span><span>Enable and verify HTTPS</span></summary>
-        <p>The official data does not confirm that an SSL certificate is included, so check with DigitalOcean how to set one up before signing up. Once a certificate is in place, replace example.com with your own domain and check the response headers and any redirects from your local terminal: curl -I https://example.com</p></details></li>
-        <li><details><summary><span class="step">STEP 3</span><span>Learn how backups and restores work</span></summary>
-        <p>The official data does not mention backups for this plan. Before you push production builds, find out whether backups are available, how often they run and how a restore is done. Keep a copy of your build output and source in your own repository as well.</p></details></li>
-        <li><details><summary><span class="step">STEP 4</span><span>Note the renewal date and renewal price</span></summary>
-        <p>The listed feature is Flat monthly price (no intro discount), but confirm the renewal price and term length in the verified table on this page. Add the renewal date to your calendar so the server is not interrupted unexpectedly.</p></details></li>
+        <li><details open><summary><span class="step">STEP 1</span><span>Create the server and note its IP address</span></summary>
+        <p>Create the DigitalOcean Basic 2 GiB / 2 vCPU server with the Linux distribution you plan to use, and add an SSH key for login. Write down the server&#39;s public IP address, plus its IPv6 address if one is assigned. You will need these when you update your DNS records later.</p></details></li>
+        <li><details><summary><span class="step">STEP 2</span><span>Apply security updates and set up a firewall</span></summary>
+        <p>Log in over SSH and install all pending operating system updates before adding anything else. Turn on automatic security updates if your distribution supports them. Configure a firewall that allows only SSH, HTTP and HTTPS, and consider disabling password logins in favor of SSH keys.</p></details></li>
+        <li><details><summary><span class="step">STEP 3</span><span>Install the web stack and test WordPress before moving DNS</span></summary>
+        <p>Install a web server, PHP and a database server, then create a database and user for WordPress. Copy your WordPress files and import the database exported from your shared hosting account. Test the site on the new server, for example through a temporary hosts file entry on your own computer, while your domain still points at the old host.</p></details></li>
+        <li><details><summary><span class="step">STEP 4</span><span>Point the domain and issue a TLS certificate</span></summary>
+        <p>Once the new site works, update the domain&#39;s A record, and the AAAA record if you use IPv6, to the new server&#39;s IP address. Confirm the change from your own computer, replacing example.com with your domain: dig +short A example.com. After the domain resolves to the new server, issue a TLS certificate so the site loads over HTTPS.</p></details></li>
+        <li><details><summary><span class="step">STEP 5</span><span>Set up backups and test a restore</span></summary>
+        <p>Schedule regular backups of both the WordPress database and the site files, and copy them off the server. If WP-CLI is installed, you can export the database from the WordPress directory: wp db export backup.sql. Restore a backup to a test location at least once to confirm it works, and check whether DigitalOcean offers server-level backups for this plan before relying on them.</p></details></li>
       </ol>
     </section>
     <section class="faq">
       <h2 id="faq">Frequently asked questions</h2>
       <ul class="acc">
-        <li><details open><summary>Does the DigitalOcean Basic 2 GiB / 2 vCPU plan include an SSL certificate?</summary>
-        <p>The official data does not list an SSL certificate. Confirm with DigitalOcean how HTTPS is handled before signing up.</p></details></li>
-        <li><details><summary>Is there an intro discount on this plan?</summary>
-        <p>The listed feature is Flat monthly price (no intro discount). Still, check the price, renewal price and term in the verified table on this page.</p></details></li>
-        <li><details><summary>What is the term length?</summary>
-        <p>The official data lists the term as 1 month.</p></details></li>
-        <li><details><summary>Does the plan include backups?</summary>
-        <p>The official data does not mention backups. Find out how backups and restores work before you deploy anything important.</p></details></li>
-        <li><details><summary>How does it differ from DigitalOcean Basic 2 GiB?</summary>
-        <p>The official data lists the same category, term and feature for both plans and does not describe further differences. Compare the names and the verified price table.</p></details></li>
-        <li><details><summary>Is SSH access included?</summary>
-        <p>The features list does not mention SSH or root access. Confirm this with DigitalOcean if your deploy workflow depends on it.</p></details></li>
+        <li><details open><summary>Is DigitalOcean Basic 2 GiB / 2 vCPU managed WordPress hosting?</summary>
+        <p>No. It is a Cloud VPS, which means a self-managed server. You install and maintain the web stack, apply security updates and handle backups yourself.</p></details></li>
+        <li><details><summary>Will the price go up after the first month?</summary>
+        <p>The renewal price is the same as the intro price, and the listed feature is a &quot;Flat monthly price (no intro discount)&quot;. The current price is in the price table on this page.</p></details></li>
+        <li><details><summary>How much bandwidth does this plan include?</summary>
+        <p>A bandwidth figure is not listed for this plan. Check the DigitalOcean pricing page if transfer volume matters for your site.</p></details></li>
+        <li><details><summary>Do I get SSH and root access?</summary>
+        <p>Yes. As a self-managed VPS, the plan gives you SSH and root access so you can install and configure the software your WordPress site needs.</p></details></li>
+        <li><details><summary>How do I confirm my domain points to the new server before setting up HTTPS?</summary>
+        <p>From your own computer, look up the IP address your domain currently resolves to and compare it with the server&#39;s IP address. Replace example.com with your own domain: dig +short A example.com</p></details></li>
       </ul>
     </section>
     <aside class="sources" aria-label="Further reading (external references)">
@@ -257,9 +263,13 @@
       <p class="about-title">How we check this page</p>
       <p>Intro prices, renewal prices and terms are entered only after a person checks them on the host&#39;s official pricing page, and the check date is shown. Prices older than 60 days are not republished until they are checked again. The explanations are drafted by AI from the official data only, and an automatic check rejects numbers not in the data, made-up user reviews and hype. This site is supported by affiliate commissions; the table values are copied from official data regardless of commission.</p>
     </aside>
-    <p class="back-to-offer"><a href="#offer">↑ Back to pricing and the official link</a></p>
+    <p class="back-to-offer"><a href="#offer">↑ Back to the price table and plan link</a></p>
+    <section class="related related-plans">
+      <h2>Related pages</h2>
+      <ul><li><a href="../../../compare/digitalocean-vs-vultr/">DigitalOcean vs Vultr</a></li><li><a href="../../../hosts/digitalocean/basic-2-gib/">DigitalOcean Basic 2 GiB</a></li><li><a href="../../../hosts/digitalocean/basic-1-gib/">DigitalOcean Basic 1 GiB</a></li><li><a href="../../../hosts/digitalocean/basic-512-mib/">DigitalOcean Basic 512 MiB</a></li><li><a href="../../../hosts/digitalocean/">All DigitalOcean plans</a></li></ul>
+    </section>
   </main>
-  <footer class="site-footer"><a href="../../../">⌂ Home</a><a href="#top">Back to top</a></footer>
+  <footer class="site-footer"><a href="../../../">⌂ Home</a><a href="#top">Back to top</a><a href="../../../about/">About</a><a href="../../../how-we-check-prices/">How we check prices</a></footer>
   <div id="sticky-cta" class="sticky-cta translate-y-full" hidden>
     <a href="#offer">Check the current price</a>
   </div>
