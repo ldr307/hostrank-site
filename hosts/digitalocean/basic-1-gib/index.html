@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DigitalOcean Basic 1 GiB for a Side Project or Small API</title>
-  <meta name="description" content="DigitalOcean Basic 1 GiB cloud VPS with 25 GiB SSD: who it suits, what to check, and setting up SSH, updates, a firewall and backups." />
+  <meta name="description" content="What DigitalOcean Basic 1 GiB includes, how its billing works, and what a self-managed side project or API needs: SSH, updates, firewall, backups." />
   <link rel="canonical" href="https://hosts.fasthosting.info/hosts/digitalocean/basic-1-gib/" />
   <meta name="theme-color" content="#0b1220" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="DigitalOcean Basic 1 GiB for a Side Project or Small API" />
-  <meta property="og:description" content="DigitalOcean Basic 1 GiB cloud VPS with 25 GiB SSD: who it suits, what to check, and setting up SSH, updates, a firewall and backups." />
+  <meta property="og:description" content="What DigitalOcean Basic 1 GiB includes, how its billing works, and what a self-managed side project or API needs: SSH, updates, firewall, backups." />
   <meta name="twitter:card" content="summary" />
   <style>
     :root { color-scheme: dark; --bg: #0b1220; --card: #111a2e; --card-2: #0f1729; --line: #1f2a40; --line-2: #2a3752; --ink: #f1f5f9; --text: #cbd5e1; --muted: #94a3b8; --link: #93c5fd; --accent: #60a5fa; --btn: #2563eb; --btn-hover: #1d4ed8; --self: #16233f; }
@@ -153,14 +153,14 @@
     <p class="disclosure" style="font-size:0.85em;color:#64748b">Disclosure: This page contains affiliate links. If you buy or sign up through them, we may earn a commission at no extra cost to you.</p>
     <aside class="summary" aria-label="Key facts at a glance">
       <p class="summary-title">Key facts at a glance</p>
-      <p class="summary-lead">DigitalOcean Basic 1 GiB cloud VPS with 25 GiB SSD: who it suits, what to check, and setting up SSH, updates, a firewall and backups.</p>
-      <dl class="specs"><div class="spec"><dt>Host</dt><dd>DigitalOcean</dd></div><div class="spec"><dt>Price (monthly)</dt><dd>$6.00</dd></div><div class="spec"><dt>Term</dt><dd>1 month</dd></div><div class="spec"><dt>RAM</dt><dd>1 GiB</dd></div><div class="spec"><dt>Storage</dt><dd>25 GiB SSD</dd></div><div class="spec"><dt>Prices checked</dt><dd>Oct 1, 2026</dd></div></dl>
+      <p class="summary-lead">What DigitalOcean Basic 1 GiB includes, how its billing works, and what a self-managed side project or API needs: SSH, updates, firewall, backups.</p>
+      <dl class="specs"><div class="spec"><dt>Host</dt><dd>DigitalOcean</dd></div><div class="spec"><dt>Price (monthly)</dt><dd>$6.00</dd></div><div class="spec"><dt>Term</dt><dd>1 month</dd></div><div class="spec"><dt>Billing</dt><dd>USD per month equivalent; billing term and prepayment depend on plan</dd></div><div class="spec"><dt>RAM</dt><dd>1 GiB</dd></div><div class="spec"><dt>Storage</dt><dd>25 GiB SSD</dd></div><div class="spec"><dt>Prices checked</dt><dd>Oct 1, 2026</dd></div></dl>
     </aside>
     
-    <p class="intro">DigitalOcean Basic 1 GiB is a Cloud VPS plan from DigitalOcean, listed with 1 GiB of RAM and 25 GiB SSD storage. For a developer running a side project or a small API, it is a self-managed server. You get the machine, and you handle SSH access, security updates, a firewall and backups yourself. This page covers what the official data says about the plan, what it leaves open, how it compares with similar Cloud VPS plans, and a practical order for getting a site or API online.</p>
+    <p class="intro">DigitalOcean Basic 1 GiB is a Cloud VPS plan from DigitalOcean with 1 GiB of RAM and 25 GiB SSD of storage. For a developer running a side project or a small API, the appeal is a plain server you control yourself. That control comes with responsibility: SSH access, security updates, a firewall and backups are yours to set up and maintain. This page covers what the plan lists, how its billing is described, how it lines up against similar plans, and the steps to get a small service online safely.</p>
     <nav class="toc" aria-label="On this page">
       <p class="toc-title">On this page</p>
-      <ol><li><a href="#s1">Who This Plan Suits</a></li><li><a href="#s2">What to Check Before Signing Up</a></li><li><a href="#s3">What a Self-Managed Server Needs</a></li><li><a href="#s4">How It Compares With Similar Cloud VPS Plans</a></li><li><a href="#guide">Practical setup guide</a></li><li><a href="#faq">Frequently asked questions</a></li></ol>
+      <ol><li><a href="#s1">Who this plan suits</a></li><li><a href="#s2">What the plan lists</a></li><li><a href="#s3">How billing works</a></li><li><a href="#s4">What a self-managed server needs from you</a></li><li><a href="#s5">How it compares with similar plans</a></li><li><a href="#s6">What to check before signing up</a></li><li><a href="#guide">Practical setup guide</a></li><li><a href="#faq">Frequently asked questions</a></li></ol>
     </nav>
     <section id="offer">
       <h2>Plan details (official data)</h2>
@@ -170,6 +170,7 @@
         <tr><th>Category</th><td>Cloud VPS</td></tr>
         <tr><th>Price (monthly)</th><td>$6.00</td></tr>
         <tr><th>Term</th><td>1 month</td></tr>
+        <tr><th>Billing</th><td>USD per month equivalent; billing term and prepayment depend on plan</td></tr>
         <tr><th>RAM</th><td>1 GiB</td></tr>
         <tr><th>Storage</th><td>25 GiB SSD</td></tr>
       </table></div>
@@ -182,69 +183,79 @@
       <h2 id="compare">Compare plans in this category (official data)</h2>
       <p class="swipe" aria-hidden="true">Swipe the table to see more →</p>
       <div class="table-wrap compare"><table>
-        <thead><tr><th>Plan</th><th>Host</th><th>Price (monthly)</th><th>Term</th><th>CPU</th><th>RAM</th><th>Storage</th><th>Bandwidth</th></tr></thead>
+        <thead><tr><th>Plan</th><th>Host</th><th>Price (monthly)</th><th>Term or billing cycle</th><th>Billing</th><th>CPU</th><th>RAM</th><th>Storage</th><th>Bandwidth</th></tr></thead>
         <tbody>
-        <tr class="self"><td>DigitalOcean Basic 1 GiB (this plan)</td><td>DigitalOcean</td><td>$6.00</td><td>1 month</td><td>Not listed</td><td>1 GiB</td><td>25 GiB SSD</td><td>Not listed</td></tr>
-        <tr><td>Vultr Cloud Compute 0.5 GB</td><td>Vultr</td><td>$3.50</td><td>1 month</td><td>1 vCPU</td><td>0.5 GB</td><td>10 GB SSD</td><td>0.5 TB</td></tr>
-        <tr><td>DigitalOcean Basic 512 MiB</td><td>DigitalOcean</td><td>$4.00</td><td>1 month</td><td>Not listed</td><td>512 MiB</td><td>10 GiB SSD</td><td>Not listed</td></tr>
-        <tr><td>Vultr Cloud Compute 1 GB</td><td>Vultr</td><td>$5.00</td><td>1 month</td><td>1 vCPU</td><td>1 GB</td><td>25 GB SSD</td><td>1 TB</td></tr>
-        <tr><td>Vultr Cloud Compute 2 GB</td><td>Vultr</td><td>$10.00</td><td>1 month</td><td>1 vCPU</td><td>2 GB</td><td>55 GB SSD</td><td>2 TB</td></tr>
+        <tr class="self"><td>DigitalOcean Basic 1 GiB (this plan)</td><td>DigitalOcean</td><td>$6.00</td><td>1 month</td><td>USD per month equivalent; billing term and prepayment depend on plan</td><td>Not listed</td><td>1 GiB</td><td>25 GiB SSD</td><td>Not listed</td></tr>
+        <tr><td>Vultr Cloud Compute 0.5 GB</td><td>Vultr</td><td>$3.50</td><td>1 month</td><td>USD per month; billed hourly up to the monthly price</td><td>1 vCPU</td><td>0.5 GB</td><td>10 GB SSD</td><td>0.5 TB</td></tr>
+        <tr><td>DigitalOcean Basic 512 MiB</td><td>DigitalOcean</td><td>$4.00</td><td>1 month</td><td>USD per month equivalent; billing term and prepayment depend on plan</td><td>Not listed</td><td>512 MiB</td><td>10 GiB SSD</td><td>Not listed</td></tr>
+        <tr><td>Vultr Cloud Compute 1 GB</td><td>Vultr</td><td>$5.00</td><td>1 month</td><td>USD per month; billed hourly up to the monthly price</td><td>1 vCPU</td><td>1 GB</td><td>25 GB SSD</td><td>1 TB</td></tr>
+        <tr><td>Vultr Cloud Compute 2 GB</td><td>Vultr</td><td>$10.00</td><td>1 month</td><td>USD per month; billed hourly up to the monthly price</td><td>1 vCPU</td><td>2 GB</td><td>55 GB SSD</td><td>2 TB</td></tr>
         </tbody>
       </table></div>
       <p class="verified">All values in this table come from each host&#39;s official pricing page. This plan was checked on Oct 1, 2026; every compared plan was checked within the last 60 days.</p>
     </section>
     <section>
-      <h2 id="s1">Who This Plan Suits</h2>
-      <p>This plan fits developers who are comfortable working on a server over SSH and want a small Cloud VPS for a side project, a personal API, a webhook receiver or a staging copy of an app. The listed resources are 1 GiB of RAM and 25 GiB SSD storage. That is a modest footprint, so think about whether your runtime, database and any background workers fit together on one machine.</p>
-      <p>Because this is a self-managed server, the setup is up to you. You choose and install the web server or app runtime, keep the operating system patched, configure a firewall and decide how backups work. If you would rather not maintain a server, a managed hosting product may suit you better than a VPS.</p>
+      <h2 id="s1">Who this plan suits</h2>
+      <p>DigitalOcean Basic 1 GiB fits a developer who wants a self-managed Cloud VPS for a modest workload: a personal project, a webhook receiver, a small REST or JSON API, or a staging copy of an app. With 1 GiB of RAM and 25 GiB SSD of storage, it is a starting point for one service rather than a stack of databases, workers and caches all competing for memory.</p>
+      <p>Because this is a self-managed server, you get SSH access and root-level control, and you choose the operating system packages, the web server and the runtime. That flexibility suits someone comfortable on the command line. If you would rather not handle patching, firewall rules and backups yourself, a managed hosting product is a better match than any VPS.</p>
     </section>
     <section>
-      <h2 id="s2">What to Check Before Signing Up</h2>
-      <p>The plan&#39;s features list a &quot;Flat monthly price (no intro discount)&quot;, and the term is listed as 1 month. The renewal price is the same as the intro price, so the amount in the price table is what the plan costs per cycle. Check the price table on this page for the current figure.</p>
-      <p>Some details are not covered here. The official data does not list the plan&#39;s CPU allocation, bandwidth allowance, billing method, a backup or snapshot service, or a provider-level firewall. Confirm each of these on DigitalOcean&#39;s own pricing and product pages before you sign up, especially bandwidth if your API serves a lot of traffic.</p>
+      <h2 id="s2">What the plan lists</h2>
+      <p>The plan lists 1 GiB of RAM and 25 GiB SSD of storage. Its single listed feature is &quot;Flat monthly price (no intro discount)&quot;.</p>
+      <p>The official data for this plan does not list a CPU allocation or a bandwidth allowance, and it does not confirm server locations, an included firewall service, automated backups or snapshots. If your API depends on a certain amount of outbound traffic or on provider-side backups, confirm those details on the provider&#39;s pricing page before signing up.</p>
     </section>
     <section>
-      <h2 id="s3">What a Self-Managed Server Needs</h2>
-      <p>SSH access is how you will manage the server, so set up key-based login early and keep your private key safe. Plan who else, if anyone, needs access, and give each person their own key rather than sharing one.</p>
-      <p>Updates are your responsibility. Turn on automatic security updates for the operating system packages, and keep a habit of updating your app&#39;s own dependencies. A small API that sits untouched for months is an easy target if its packages are out of date.</p>
-      <p>A firewall should allow only the services you actually use, typically SSH, HTTP and HTTPS. Everything else should stay closed, and that includes database services, which should listen only locally unless you have a specific reason to expose them.</p>
-      <p>Backups need a plan that works even if the server itself is lost. Export your database and archive your files on a schedule, store copies somewhere other than the server, and test a restore at least once so you know the process works.</p>
+      <h2 id="s3">How billing works</h2>
+      <p>The plan&#39;s billing is described as &quot;USD per month equivalent; billing term and prepayment depend on plan&quot;, and the term is listed as 1 month. In practice, the price is expressed as a monthly figure in US dollars, while the exact billing term and whether prepayment applies depend on the plan, so check those points in the price table and at checkout.</p>
+      <p>The renewal price is the same as the intro price. The listed feature &quot;Flat monthly price (no intro discount)&quot; matches that: there is no introductory discount on this plan. The verified price table on this page shows the current amount.</p>
     </section>
     <section>
-      <h2 id="s4">How It Compares With Similar Cloud VPS Plans</h2>
-      <p>DigitalOcean Basic 512 MiB is the smaller sibling, listed with 512 MiB of RAM and 10 GiB SSD storage. It also has a &quot;Flat monthly price (no intro discount)&quot;, a term of 1 month and a renewal price that is the same as the intro price. It may suit a very light service, such as a single small endpoint or a bot. The Basic 1 GiB plan gives more room for a database alongside the app.</p>
-      <p>Vultr offers Cloud Compute plans whose features include &quot;Regular Performance (previous-gen Intel, regular SSD)&quot; and a &quot;flat monthly price (no intro discount)&quot;. Each has a term of 1 month and a renewal price that is the same as the intro price. Unlike the DigitalOcean entries here, the Vultr data lists CPU and bandwidth.</p>
-      <p>Vultr Cloud Compute 0.5 GB lists 1 vCPU, 0.5 GB of RAM, 10 GB SSD and 0.5 TB bandwidth. Vultr Cloud Compute 1 GB lists 1 vCPU, 1 GB of RAM, 25 GB SSD and 1 TB bandwidth. Vultr Cloud Compute 2 GB lists 1 vCPU, 2 GB of RAM, 55 GB SSD and 2 TB bandwidth.</p>
-      <p>If a published bandwidth figure matters for your API, the Vultr plans state one in the data. If you already work in the DigitalOcean ecosystem, the Basic plans keep everything in one place. Compare the prices in the table and match RAM and storage to what your project actually uses.</p>
+      <h2 id="s4">What a self-managed server needs from you</h2>
+      <p>SSH access: log in with SSH keys instead of passwords, create a regular user with sudo rights for daily work, and limit direct root logins. This step alone removes a large share of automated login attempts against a public server.</p>
+      <p>Updates: a fresh server image ages quickly. Apply operating system updates right after the first login and enable automatic security updates so patches keep arriving while you focus on the project.</p>
+      <p>Firewall: allow only what the service needs, typically SSH, HTTP and HTTPS, and keep database and internal application services closed to the public internet. Put your API behind a reverse proxy such as Nginx rather than exposing the app server directly.</p>
+      <p>Backups: plan them before you need them. Since the data does not confirm provider-side backups for this plan, decide whether to add a provider option after checking it, export your database and files on a schedule, and store copies off the server. Test a restore at least once so you know the backups actually work.</p>
+    </section>
+    <section>
+      <h2 id="s5">How it compares with similar plans</h2>
+      <p>DigitalOcean Basic 512 MiB is the smaller sibling on the same billing description, &quot;USD per month equivalent; billing term and prepayment depend on plan&quot;, with a term of 1 month, 512 MiB of RAM and 10 GiB SSD of storage. It suits a very light service, such as a single small endpoint or a learning project, where memory needs stay low. The renewal price is the same as the intro price, and it also lists &quot;Flat monthly price (no intro discount)&quot;.</p>
+      <p>Vultr Cloud Compute 0.5 GB lists 1 vCPU, 0.5 GB of RAM, 10 GB SSD of storage and 0.5 TB of bandwidth. Its billing is &quot;USD per month; billed hourly up to the monthly price&quot;, so charges build up by the hour up to the monthly price shown in the table. Its features read &quot;Regular Performance (previous-gen Intel, regular SSD)&quot; and &quot;flat monthly price (no intro discount)&quot;.</p>
+      <p>Vultr Cloud Compute 1 GB lists 1 vCPU, 1 GB of RAM, 25 GB SSD of storage and 1 TB of bandwidth, with the same hourly billing description and the same feature wording. Unlike the DigitalOcean plans here, the Vultr plans list a CPU and a bandwidth figure, which helps if you want to estimate traffic for an API up front.</p>
+      <p>Vultr Cloud Compute 2 GB lists 1 vCPU, 2 GB of RAM, 55 GB SSD of storage and 2 TB of bandwidth, again billed hourly up to the monthly price. It fits a project that needs more memory headroom, for example an API plus a database on one server. Note that RAM and storage are given in GiB and MiB for DigitalOcean and in GB for Vultr, so compare the listed figures as written rather than assuming they are identical.</p>
+    </section>
+    <section>
+      <h2 id="s6">What to check before signing up</h2>
+      <p>Confirm the billing term and whether prepayment applies, since the billing description says both depend on plan. Check the CPU allocation and the bandwidth allowance on the provider&#39;s pricing page, because neither is listed here. Look up which data center regions are offered if latency to your users or to a third-party API matters.</p>
+      <p>Finally, decide how you will handle backups and whether the 1 GiB of RAM leaves room for your runtime, a reverse proxy and any database you plan to run on the same server.</p>
     </section>
     <section class="guide">
       <h2 id="guide">Practical setup guide</h2>
       <ol class="acc">
-        <li><details open><summary><span class="step">STEP 1</span><span>Create the server and note its IP address</span></summary>
-        <p>Create the DigitalOcean Basic 1 GiB server, add your SSH public key during setup if the option is offered, and write down the server&#39;s public IP address. Log in over SSH and confirm you can reach a shell before doing anything else.</p></details></li>
-        <li><details><summary><span class="step">STEP 2</span><span>Lock down SSH, updates and the firewall</span></summary>
-        <p>Create a non-root user with sudo rights, confirm key-based login works for it, then disable password login. Enable automatic security updates for the operating system. Configure a firewall that allows only SSH, HTTP and HTTPS.</p></details></li>
-        <li><details><summary><span class="step">STEP 3</span><span>Deploy the app and point DNS at the server</span></summary>
-        <p>Install your web server or runtime, deploy the side project or API, and test it directly on the server. Once it responds correctly, add A records, and AAAA records if you use IPv6, at your DNS provider pointing to the server&#39;s IP. Replace example.com with your domain and check the result from your own computer: dig +short A example.com</p></details></li>
-        <li><details><summary><span class="step">STEP 4</span><span>Issue a TLS certificate</span></summary>
-        <p>After DNS resolves to the new server, install Certbot following its official instructions. If you serve the site through Nginx, replace example.com and www.example.com with your own names and run: sudo certbot --nginx -d example.com -d www.example.com</p></details></li>
-        <li><details><summary><span class="step">STEP 5</span><span>Set up backups and note the billing cycle</span></summary>
-        <p>Schedule regular database exports and file archives, copy them to storage outside the server, and test a restore. Note the date your monthly cycle renews. The renewal price is the same as the intro price, as shown in the price table.</p></details></li>
+        <li><details open><summary><span class="step">STEP 1</span><span>Create the server and lock down SSH</span></summary>
+        <p>Create the server, choose a Linux distribution you know, add your SSH public key, and note the server&#39;s IP address. Log in over SSH, create a regular user with sudo rights, and turn off password logins once key-based access works. Apply all pending operating system updates and enable automatic security updates.</p></details></li>
+        <li><details><summary><span class="step">STEP 2</span><span>Turn on a firewall</span></summary>
+        <p>Allow only SSH, HTTP and HTTPS through the firewall and keep everything else closed, including your database and the port your app server listens on internally. Confirm you can still reach the server over SSH before closing your current session.</p></details></li>
+        <li><details><summary><span class="step">STEP 3</span><span>Deploy the app behind Nginx and test it</span></summary>
+        <p>Install your runtime and Nginx, run your API as a system service, and configure Nginx as a reverse proxy in front of it. Test the service against the server&#39;s IP address until it responds correctly. Only move on to DNS once the new setup is working.</p></details></li>
+        <li><details><summary><span class="step">STEP 4</span><span>Point the domain and issue a certificate</span></summary>
+        <p>Create A and AAAA records for your domain that point at the server&#39;s IP addresses, then confirm the change has reached the resolver you use with this command, replacing example.com with your own domain: dig +short A example.com. Once it returns your server&#39;s IP, install Certbot and request a Let&#39;s Encrypt certificate for Nginx, again replacing the example domains with your own: sudo certbot --nginx -d example.com -d www.example.com.</p></details></li>
+        <li><details><summary><span class="step">STEP 5</span><span>Set up backups and note the billing details</span></summary>
+        <p>Schedule regular exports of your database and application files and copy them off the server, then test a restore. Since provider-side backups are not confirmed for this plan, check that option separately if you want it. Record the billing term and any prepayment requirement shown at checkout so the account stays in good standing.</p></details></li>
       </ol>
     </section>
     <section class="faq">
       <h2 id="faq">Frequently asked questions</h2>
       <ul class="acc">
-        <li><details open><summary>Does DigitalOcean Basic 1 GiB include SSH or root access?</summary>
-        <p>It is a self-managed Cloud VPS, so you manage the server yourself over SSH. Set up key-based login and disable password login once your key works.</p></details></li>
-        <li><details><summary>Will the price change after the first month?</summary>
-        <p>The renewal price is the same as the intro price, and the features describe a &quot;Flat monthly price (no intro discount)&quot;. See the price table for the current amount.</p></details></li>
-        <li><details><summary>Is this enough for a small API?</summary>
-        <p>It depends on your stack. The plan lists 1 GiB of RAM and 25 GiB SSD storage. A lightweight API with a small database can fit in that, but check memory use of your runtime and database together before relying on it.</p></details></li>
-        <li><details><summary>How do I check that my domain points at the new server?</summary>
-        <p>Run this from your own computer, replacing example.com with your domain: dig +short A example.com</p></details></li>
-        <li><details><summary>Are backups included?</summary>
-        <p>A backup service is not confirmed for this plan, so check DigitalOcean&#39;s product pages. Either way, keep your own database exports and file archives stored off the server.</p></details></li>
+        <li><details open><summary>Is DigitalOcean Basic 1 GiB enough for a small API?</summary>
+        <p>It lists 1 GiB of RAM and 25 GiB SSD of storage, which can work for a single lightweight service. Whether it is enough depends on your runtime, your database and your traffic. The CPU allocation and bandwidth allowance are not listed, so check those before relying on it for production traffic.</p></details></li>
+        <li><details><summary>Does the price go up at renewal?</summary>
+        <p>No. The renewal price is the same as the intro price, and the plan lists &quot;Flat monthly price (no intro discount)&quot;. See the price table for the current amount.</p></details></li>
+        <li><details><summary>How is this plan billed?</summary>
+        <p>The billing is described as &quot;USD per month equivalent; billing term and prepayment depend on plan&quot;, with a term of 1 month. Check the exact billing term and any prepayment requirement in the price table and at checkout.</p></details></li>
+        <li><details><summary>Do I get SSH and root access?</summary>
+        <p>Yes, it is a self-managed Cloud VPS, so you administer the server over SSH. That also means updates, firewall rules and backups are your responsibility.</p></details></li>
+        <li><details><summary>How is it different from the Vultr plans listed here?</summary>
+        <p>The Vultr Cloud Compute plans list a vCPU count and a bandwidth figure and are billed hourly up to the monthly price. The DigitalOcean plans list RAM and storage only, and their billing term and prepayment depend on plan. Pick based on the resources your project needs and the billing style you prefer.</p></details></li>
       </ul>
     </section>
     <aside class="sources" aria-label="Further reading (external references)">

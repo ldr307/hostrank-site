@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DigitalOcean Basic 2 GiB / 2 vCPU: Moving WordPress to VPS</title>
-  <meta name="description" content="What changes when a WordPress site moves from shared hosting to DigitalOcean Basic 2 GiB / 2 vCPU: resources, alternatives, security updates and backups." />
+  <meta name="description" content="What changes when a WordPress site leaves shared hosting for the DigitalOcean Basic 2 GiB / 2 vCPU plan: resources, billing, setup, updates and backups." />
   <link rel="canonical" href="https://hosts.fasthosting.info/hosts/digitalocean/basic-2-gib-2-vcpu/" />
   <meta name="theme-color" content="#0b1220" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="DigitalOcean Basic 2 GiB / 2 vCPU: Moving WordPress to VPS" />
-  <meta property="og:description" content="What changes when a WordPress site moves from shared hosting to DigitalOcean Basic 2 GiB / 2 vCPU: resources, alternatives, security updates and backups." />
+  <meta property="og:description" content="What changes when a WordPress site leaves shared hosting for the DigitalOcean Basic 2 GiB / 2 vCPU plan: resources, billing, setup, updates and backups." />
   <meta name="twitter:card" content="summary" />
   <style>
     :root { color-scheme: dark; --bg: #0b1220; --card: #111a2e; --card-2: #0f1729; --line: #1f2a40; --line-2: #2a3752; --ink: #f1f5f9; --text: #cbd5e1; --muted: #94a3b8; --link: #93c5fd; --accent: #60a5fa; --btn: #2563eb; --btn-hover: #1d4ed8; --self: #16233f; }
@@ -153,14 +153,14 @@
     <p class="disclosure" style="font-size:0.85em;color:#64748b">Disclosure: This page contains affiliate links. If you buy or sign up through them, we may earn a commission at no extra cost to you.</p>
     <aside class="summary" aria-label="Key facts at a glance">
       <p class="summary-title">Key facts at a glance</p>
-      <p class="summary-lead">What changes when a WordPress site moves from shared hosting to DigitalOcean Basic 2 GiB / 2 vCPU: resources, alternatives, security updates and backups.</p>
-      <dl class="specs"><div class="spec"><dt>Host</dt><dd>DigitalOcean</dd></div><div class="spec"><dt>Price (monthly)</dt><dd>$18.00</dd></div><div class="spec"><dt>Term</dt><dd>1 month</dd></div><div class="spec"><dt>CPU</dt><dd>2 vCPU</dd></div><div class="spec"><dt>RAM</dt><dd>2 GiB</dd></div><div class="spec"><dt>Storage</dt><dd>60 GiB SSD</dd></div><div class="spec"><dt>Prices checked</dt><dd>Oct 1, 2026</dd></div></dl>
+      <p class="summary-lead">What changes when a WordPress site leaves shared hosting for the DigitalOcean Basic 2 GiB / 2 vCPU plan: resources, billing, setup, updates and backups.</p>
+      <dl class="specs"><div class="spec"><dt>Host</dt><dd>DigitalOcean</dd></div><div class="spec"><dt>Price (monthly)</dt><dd>$18.00</dd></div><div class="spec"><dt>Term</dt><dd>1 month</dd></div><div class="spec"><dt>Billing</dt><dd>USD per month equivalent; billing term and prepayment depend on plan</dd></div><div class="spec"><dt>CPU</dt><dd>2 vCPU</dd></div><div class="spec"><dt>RAM</dt><dd>2 GiB</dd></div><div class="spec"><dt>Storage</dt><dd>60 GiB SSD</dd></div><div class="spec"><dt>Prices checked</dt><dd>Oct 1, 2026</dd></div></dl>
     </aside>
     
-    <p class="intro">Moving a WordPress site from shared hosting to a VPS shifts the work. On shared hosting, the provider usually handles the server, its updates and often the backups. On a self-managed cloud VPS such as DigitalOcean Basic 2 GiB / 2 vCPU, you get the server and its listed resources, and the rest becomes your job: installing the web stack, applying security updates, running a firewall and keeping backups you can restore. This page sets out what the plan includes according to its official pricing details, how it lines up against similar Cloud VPS plans, and what to plan for before you move your site.</p>
+    <p class="intro">Moving a WordPress site from shared hosting to a VPS means taking on jobs the shared host used to handle: installing the web server, applying security updates, issuing certificates and keeping backups. This page explains what the DigitalOcean Basic 2 GiB / 2 vCPU plan includes according to its official listing, who it suits, what to check before signing up, and how it lines up against similar Cloud VPS plans. Current prices are shown in the verified price table on this page.</p>
     <nav class="toc" aria-label="On this page">
       <p class="toc-title">On this page</p>
-      <ol><li><a href="#s1">What the DigitalOcean Basic 2 GiB / 2 vCPU plan includes</a></li><li><a href="#s2">Who this plan suits</a></li><li><a href="#s3">What changes when you manage the server yourself</a></li><li><a href="#s4">Billing and renewal: what to check before signing up</a></li><li><a href="#s5">How it compares with similar Cloud VPS plans</a></li><li><a href="#guide">Practical setup guide</a></li><li><a href="#faq">Frequently asked questions</a></li></ol>
+      <ol><li><a href="#s1">What the plan includes</a></li><li><a href="#s2">Who this plan suits</a></li><li><a href="#s3">What changes when you manage the server yourself</a></li><li><a href="#s4">Billing and renewal: what to check before signing up</a></li><li><a href="#s5">How it compares with similar Cloud VPS plans</a></li><li><a href="#guide">Practical setup guide</a></li><li><a href="#faq">Frequently asked questions</a></li></ol>
     </nav>
     <section id="offer">
       <h2>Plan details (official data)</h2>
@@ -170,6 +170,7 @@
         <tr><th>Category</th><td>Cloud VPS</td></tr>
         <tr><th>Price (monthly)</th><td>$18.00</td></tr>
         <tr><th>Term</th><td>1 month</td></tr>
+        <tr><th>Billing</th><td>USD per month equivalent; billing term and prepayment depend on plan</td></tr>
         <tr><th>CPU</th><td>2 vCPU</td></tr>
         <tr><th>RAM</th><td>2 GiB</td></tr>
         <tr><th>Storage</th><td>60 GiB SSD</td></tr>
@@ -183,75 +184,72 @@
       <h2 id="compare">Compare plans in this category (official data)</h2>
       <p class="swipe" aria-hidden="true">Swipe the table to see more →</p>
       <div class="table-wrap compare"><table>
-        <thead><tr><th>Plan</th><th>Host</th><th>Price (monthly)</th><th>Term</th><th>CPU</th><th>RAM</th><th>Storage</th><th>Bandwidth</th></tr></thead>
+        <thead><tr><th>Plan</th><th>Host</th><th>Price (monthly)</th><th>Term or billing cycle</th><th>Billing</th><th>CPU</th><th>RAM</th><th>Storage</th><th>Bandwidth</th></tr></thead>
         <tbody>
-        <tr class="self"><td>DigitalOcean Basic 2 GiB / 2 vCPU (this plan)</td><td>DigitalOcean</td><td>$18.00</td><td>1 month</td><td>2 vCPU</td><td>2 GiB</td><td>60 GiB SSD</td><td>Not listed</td></tr>
-        <tr><td>Vultr Cloud Compute 2 GB</td><td>Vultr</td><td>$10.00</td><td>1 month</td><td>1 vCPU</td><td>2 GB</td><td>55 GB SSD</td><td>2 TB</td></tr>
-        <tr><td>DigitalOcean Basic 2 GiB</td><td>DigitalOcean</td><td>$12.00</td><td>1 month</td><td>Not listed</td><td>2 GiB</td><td>50 GiB SSD</td><td>Not listed</td></tr>
-        <tr><td>Vultr Cloud Compute 2 GB / 2 vCPU</td><td>Vultr</td><td>$15.00</td><td>1 month</td><td>2 vCPU</td><td>2 GB</td><td>65 GB SSD</td><td>3 TB</td></tr>
-        <tr><td>Vultr Cloud Compute 4 GB / 2 vCPU</td><td>Vultr</td><td>$20.00</td><td>1 month</td><td>2 vCPU</td><td>4 GB</td><td>80 GB SSD</td><td>3 TB</td></tr>
+        <tr class="self"><td>DigitalOcean Basic 2 GiB / 2 vCPU (this plan)</td><td>DigitalOcean</td><td>$18.00</td><td>1 month</td><td>USD per month equivalent; billing term and prepayment depend on plan</td><td>2 vCPU</td><td>2 GiB</td><td>60 GiB SSD</td><td>Not listed</td></tr>
+        <tr><td>Vultr Cloud Compute 2 GB</td><td>Vultr</td><td>$10.00</td><td>1 month</td><td>USD per month; billed hourly up to the monthly price</td><td>1 vCPU</td><td>2 GB</td><td>55 GB SSD</td><td>2 TB</td></tr>
+        <tr><td>DigitalOcean Basic 2 GiB</td><td>DigitalOcean</td><td>$12.00</td><td>1 month</td><td>USD per month equivalent; billing term and prepayment depend on plan</td><td>Not listed</td><td>2 GiB</td><td>50 GiB SSD</td><td>Not listed</td></tr>
+        <tr><td>Vultr Cloud Compute 2 GB / 2 vCPU</td><td>Vultr</td><td>$15.00</td><td>1 month</td><td>USD per month; billed hourly up to the monthly price</td><td>2 vCPU</td><td>2 GB</td><td>65 GB SSD</td><td>3 TB</td></tr>
+        <tr><td>Vultr Cloud Compute 4 GB / 2 vCPU</td><td>Vultr</td><td>$20.00</td><td>1 month</td><td>USD per month; billed hourly up to the monthly price</td><td>2 vCPU</td><td>4 GB</td><td>80 GB SSD</td><td>3 TB</td></tr>
         </tbody>
       </table></div>
       <p class="verified">All values in this table come from each host&#39;s official pricing page. This plan was checked on Oct 1, 2026; every compared plan was checked within the last 60 days.</p>
     </section>
     <section>
-      <h2 id="s1">What the DigitalOcean Basic 2 GiB / 2 vCPU plan includes</h2>
-      <p>DigitalOcean lists this plan in the Cloud VPS category with 2 vCPU, 2 GiB of RAM and 60 GiB SSD storage. The listed feature is a &quot;Flat monthly price (no intro discount)&quot;, and the term is 1 month.</p>
-      <p>No bandwidth allowance is listed for this plan in the official data, so if your WordPress site serves a lot of media or traffic, check the transfer allowance on the DigitalOcean pricing page before signing up.</p>
-      <p>Because this is a self-managed server, you have SSH and root access to configure it the way your site needs. That freedom also means no one else is applying updates or watching the server for you unless you arrange it.</p>
+      <h2 id="s1">What the plan includes</h2>
+      <p>DigitalOcean Basic 2 GiB / 2 vCPU is listed in the Cloud VPS category. Its official resources are 2 vCPU, 2 GiB of RAM and 60 GiB SSD storage. The listed feature is &quot;Flat monthly price (no intro discount)&quot;.</p>
+      <p>The official listing does not state a bandwidth allowance for this plan, so check the transfer allowance on the provider&#39;s pricing page before moving a busy WordPress site.</p>
     </section>
     <section>
       <h2 id="s2">Who this plan suits</h2>
-      <p>This plan fits a WordPress site owner who has outgrown shared hosting and is ready to look after a Linux server, or who is willing to learn. If you are comfortable connecting over SSH, editing configuration files and keeping a routine for updates and backups, a plan with 2 vCPU and 2 GiB of RAM gives you a dedicated slice of resources rather than a shared account.</p>
-      <p>If you would rather not handle server maintenance at all, a self-managed VPS adds work compared with shared hosting. In that case, weigh the time you will spend on upkeep against the control you gain.</p>
+      <p>This plan fits a WordPress site owner who has outgrown shared hosting and wants a server with dedicated resources that they control. With 2 vCPU and 2 GiB of RAM, it gives room to run a web server, PHP and a database on one machine for a single site or a small group of sites.</p>
+      <p>It suits someone comfortable working over SSH, or willing to learn. As a self-managed server, it comes with SSH and root access, but that also means the owner is responsible for the software stack. The official data does not mention a control panel, a one-click WordPress installer or managed WordPress tools, so check what is available before signing up if those matter.</p>
     </section>
     <section>
       <h2 id="s3">What changes when you manage the server yourself</h2>
-      <p>Setup: shared hosting usually arrives with a web server, PHP and a database ready to go. On a VPS you choose and install that stack yourself, then create the database and copy your WordPress files and database over. Build and test the new copy of the site before you change any DNS records, so visitors keep reaching the old site until the new one works.</p>
-      <p>Security updates: the operating system, web server, PHP and database all need patches. Turn on automatic security updates where your distribution supports them, check in regularly, and keep WordPress core, themes and plugins updated as well. A firewall that only allows SSH, HTTP and HTTPS reduces what is exposed.</p>
-      <p>Backups: the official data does not confirm whether backups or snapshots are included with this plan, so check what DigitalOcean offers and whether it costs extra. Either way, keep your own copies of the WordPress database and files off the server, and practice a restore so you know the backups actually work.</p>
+      <p>On shared hosting, the host usually installs the software, patches the operating system and often runs backups. On a self-managed VPS, those tasks move to the site owner. Setup means choosing an operating system, installing a web server such as Nginx, PHP and a database, then installing WordPress and moving the site files and database.</p>
+      <p>Security updates become a routine task. The operating system, web server, PHP and database all need patches, alongside WordPress core, themes and plugins. Enabling automatic security updates in the operating system and setting up a firewall that only allows SSH, HTTP and HTTPS are common first steps.</p>
+      <p>Backups also become the owner&#39;s responsibility. The official data does not confirm whether a backup service is included with this plan, so check before signing up. Even with a provider backup option, keeping separate copies of the WordPress database and files on another machine is a sensible habit.</p>
     </section>
     <section>
       <h2 id="s4">Billing and renewal: what to check before signing up</h2>
-      <p>The plan lists a &quot;Flat monthly price (no intro discount)&quot; with a term of 1 month, and the renewal price is the same as the intro price. The billing method itself is not described in the official data, so read how charges are calculated on the DigitalOcean pricing page before you commit.</p>
-      <p>The current price is shown in the price table on this page.</p>
+      <p>The plan is billed in USD per month equivalent, and the official listing notes that the billing term and prepayment depend on plan. The listed term is 1 month. Before signing up, confirm on the pricing page how this plan is charged and whether any prepayment applies.</p>
+      <p>The renewal price is the same as the intro price, in line with the listed feature &quot;Flat monthly price (no intro discount)&quot;. The current price is shown in the price table on this page.</p>
     </section>
     <section>
       <h2 id="s5">How it compares with similar Cloud VPS plans</h2>
-      <p>DigitalOcean Basic 2 GiB lists 2 GiB of RAM and 50 GiB SSD storage with a &quot;Flat monthly price (no intro discount)&quot; and a term of 1 month. No CPU count is listed for it in the data. Against it, DigitalOcean Basic 2 GiB / 2 vCPU lists 2 vCPU and 60 GiB SSD, so it may suit a site that wants a stated CPU allocation and more storage within the same provider.</p>
-      <p>Vultr Cloud Compute 2 GB lists 1 vCPU, 2 GB of RAM, 55 GB SSD and 2 TB of bandwidth, with the feature &quot;Regular Performance (previous-gen Intel, regular SSD)&quot; and a flat monthly price (no intro discount) on a term of 1 month. It can suit a smaller WordPress site where a stated bandwidth figure matters to you.</p>
-      <p>Vultr Cloud Compute 2 GB / 2 vCPU lists 2 vCPU, 2 GB of RAM, 65 GB SSD and 3 TB of bandwidth, with the same &quot;Regular Performance (previous-gen Intel, regular SSD)&quot; feature and a term of 1 month. It lines up with the DigitalOcean Basic 2 GiB / 2 vCPU plan on vCPU count and adds a listed bandwidth figure.</p>
-      <p>Vultr Cloud Compute 4 GB / 2 vCPU lists 2 vCPU, 4 GB of RAM, 80 GB SSD and 3 TB of bandwidth, with the same feature wording and a term of 1 month. It may suit a WordPress site running many plugins, WooCommerce or object caching that needs more memory than the 2 GB plans list.</p>
-      <p>All five plans have a renewal price that is the same as the intro price. Compare current prices in the price table rather than relying on resources alone.</p>
+      <p>DigitalOcean Basic 2 GiB is the smaller sibling, with 2 GiB of RAM and 50 GiB SSD storage, compared with 60 GiB SSD on the plan covered here. Its official listing does not state a vCPU count. Billing is the same: USD per month equivalent, with billing term and prepayment depending on plan. It can suit a lighter WordPress site where the extra listed vCPU detail and storage are less important.</p>
+      <p>Vultr Cloud Compute 2 GB lists 1 vCPU, 2 GB of RAM, 55 GB SSD storage and 2 TB of bandwidth. Vultr Cloud Compute 2 GB / 2 vCPU lists 2 vCPU, 2 GB of RAM, 65 GB SSD storage and 3 TB of bandwidth. Vultr Cloud Compute 4 GB / 2 vCPU lists 2 vCPU, 4 GB of RAM, 80 GB SSD storage and 3 TB of bandwidth. All three Vultr plans list &quot;Regular Performance (previous-gen Intel, regular SSD)&quot; and &quot;flat monthly price (no intro discount)&quot;, and their billing is described as USD per month, billed hourly up to the monthly price.</p>
+      <p>In practice, the Vultr plans state a bandwidth figure, which the DigitalOcean plan&#39;s listing does not. The Vultr Cloud Compute 4 GB / 2 vCPU plan lists more RAM, which may help a WordPress site with heavier plugins or a larger database. The DigitalOcean Basic 2 GiB / 2 vCPU plan fits someone who prefers DigitalOcean&#39;s monthly-equivalent billing with 2 vCPU and 60 GiB SSD. Compare the price table and each plan&#39;s billing description before choosing.</p>
     </section>
     <section class="guide">
       <h2 id="guide">Practical setup guide</h2>
       <ol class="acc">
         <li><details open><summary><span class="step">STEP 1</span><span>Create the server and note its IP address</span></summary>
-        <p>Create the DigitalOcean Basic 2 GiB / 2 vCPU server with the Linux distribution you plan to use, and add an SSH key for login. Write down the server&#39;s public IP address, plus its IPv6 address if one is assigned. You will need these when you update your DNS records later.</p></details></li>
-        <li><details><summary><span class="step">STEP 2</span><span>Apply security updates and set up a firewall</span></summary>
-        <p>Log in over SSH and install all pending operating system updates before adding anything else. Turn on automatic security updates if your distribution supports them. Configure a firewall that allows only SSH, HTTP and HTTPS, and consider disabling password logins in favor of SSH keys.</p></details></li>
-        <li><details><summary><span class="step">STEP 3</span><span>Install the web stack and test WordPress before moving DNS</span></summary>
-        <p>Install a web server, PHP and a database server, then create a database and user for WordPress. Copy your WordPress files and import the database exported from your shared hosting account. Test the site on the new server, for example through a temporary hosts file entry on your own computer, while your domain still points at the old host.</p></details></li>
+        <p>Create the DigitalOcean Basic 2 GiB / 2 vCPU server with the operating system you plan to use, and write down its public IP address. Log in over SSH and apply all pending operating system updates before installing anything else.</p></details></li>
+        <li><details><summary><span class="step">STEP 2</span><span>Secure the server and install the WordPress stack</span></summary>
+        <p>Enable automatic security updates and set up a firewall that allows only SSH, HTTP and HTTPS. Then install a web server such as Nginx, PHP and a database server, and create a database and user for WordPress.</p></details></li>
+        <li><details><summary><span class="step">STEP 3</span><span>Move the WordPress files and database</span></summary>
+        <p>On the old shared host, export the database and download the site files. If WP-CLI is available there, run this from the WordPress folder: wp db export backup.sql. Import the database and files on the new server, then test the site before changing DNS, for example through a hosts file entry on your own computer.</p></details></li>
         <li><details><summary><span class="step">STEP 4</span><span>Point the domain and issue a TLS certificate</span></summary>
-        <p>Once the new site works, update the domain&#39;s A record, and the AAAA record if you use IPv6, to the new server&#39;s IP address. Confirm the change from your own computer, replacing example.com with your domain: dig +short A example.com. After the domain resolves to the new server, issue a TLS certificate so the site loads over HTTPS.</p></details></li>
-        <li><details><summary><span class="step">STEP 5</span><span>Set up backups and test a restore</span></summary>
-        <p>Schedule regular backups of both the WordPress database and the site files, and copy them off the server. If WP-CLI is installed, you can export the database from the WordPress directory: wp db export backup.sql. Restore a backup to a test location at least once to confirm it works, and check whether DigitalOcean offers server-level backups for this plan before relying on them.</p></details></li>
+        <p>Once the site works on the new server, update the domain&#39;s A record, and the AAAA record if you use IPv6, to the server&#39;s IP address. When the domain resolves to the new server, issue a TLS certificate, for example with Certbot for Nginx, and confirm the site loads over HTTPS.</p></details></li>
+        <li><details><summary><span class="step">STEP 5</span><span>Set up backups and a maintenance routine</span></summary>
+        <p>Schedule regular exports of the WordPress database and archives of the site files, and copy them off the server. Check the provider&#39;s backup options as well. Keep a routine for updating WordPress core, themes and plugins alongside the operating system updates.</p></details></li>
       </ol>
     </section>
     <section class="faq">
       <h2 id="faq">Frequently asked questions</h2>
       <ul class="acc">
-        <li><details open><summary>Is DigitalOcean Basic 2 GiB / 2 vCPU managed WordPress hosting?</summary>
-        <p>No. It is a Cloud VPS, which means a self-managed server. You install and maintain the web stack, apply security updates and handle backups yourself.</p></details></li>
-        <li><details><summary>Will the price go up after the first month?</summary>
-        <p>The renewal price is the same as the intro price, and the listed feature is a &quot;Flat monthly price (no intro discount)&quot;. The current price is in the price table on this page.</p></details></li>
-        <li><details><summary>How much bandwidth does this plan include?</summary>
-        <p>A bandwidth figure is not listed for this plan. Check the DigitalOcean pricing page if transfer volume matters for your site.</p></details></li>
-        <li><details><summary>Do I get SSH and root access?</summary>
-        <p>Yes. As a self-managed VPS, the plan gives you SSH and root access so you can install and configure the software your WordPress site needs.</p></details></li>
-        <li><details><summary>How do I confirm my domain points to the new server before setting up HTTPS?</summary>
-        <p>From your own computer, look up the IP address your domain currently resolves to and compare it with the server&#39;s IP address. Replace example.com with your own domain: dig +short A example.com</p></details></li>
+        <li><details open><summary>Is DigitalOcean Basic 2 GiB / 2 vCPU a managed WordPress host?</summary>
+        <p>No. It is a self-managed Cloud VPS. The owner installs and maintains the web server, PHP, database and WordPress, and handles security updates and backups.</p></details></li>
+        <li><details><summary>Will the price change after the first month?</summary>
+        <p>The renewal price is the same as the intro price, and the plan lists &quot;Flat monthly price (no intro discount)&quot;. See the price table for the current amount.</p></details></li>
+        <li><details><summary>Does the plan include automatic backups?</summary>
+        <p>The official listing does not mention backups, so plan to set up your own database and file backups and check the provider&#39;s backup options before signing up.</p></details></li>
+        <li><details><summary>Is 2 GiB of RAM enough for WordPress?</summary>
+        <p>The plan lists 2 GiB of RAM and 2 vCPU. Whether that is enough depends on traffic, plugins and caching. A site with heavy plugins may want to compare plans that list more RAM, such as Vultr Cloud Compute 4 GB / 2 vCPU.</p></details></li>
+        <li><details><summary>How do I check that my domain points at the new server?</summary>
+        <p>From your own computer, run this and compare the result with the server&#39;s IP address, replacing example.com with your domain: dig +short A example.com</p></details></li>
       </ul>
     </section>
     <aside class="sources" aria-label="Further reading (external references)">
