@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMDHosting Starter for a Small Online Store</title>
+  <meta name="description" content="TMDHosting Starter for a small online store: what the plan includes, HTTPS and backup checks for checkout pages, and the billing to review before signing up." />
+  <link rel="canonical" href="https://hosts.fasthosting.info/hosts/tmdhosting/starter/" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="TMDHosting Starter for a Small Online Store" />
+  <meta property="og:description" content="TMDHosting Starter for a small online store: what the plan includes, HTTPS and backup checks for checkout pages, and the billing to review before signing up." />
+  <meta name="twitter:card" content="summary" />
+  <style>
+    :root { color-scheme: dark; --bg: #0b1220; --card: #111a2e; --card-2: #0f1729; --line: #1f2a40; --line-2: #2a3752; --ink: #f1f5f9; --text: #cbd5e1; --muted: #94a3b8; --link: #93c5fd; --accent: #60a5fa; --btn: #2563eb; --btn-hover: #1d4ed8; --self: #16233f; }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Helvetica Neue", Arial, sans-serif; font-size: 17px; line-height: 1.8; word-break: keep-all; overflow-wrap: break-word; }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:hover { color: #bfdbfe; }
+    .site-header { position: sticky; top: 0; z-index: 40; height: 56px; background: rgba(11, 18, 32, 0.94); border-bottom: 1px solid rgba(148, 163, 184, 0.16); }
+    @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+      .site-header { background: rgba(11, 18, 32, 0.68); -webkit-backdrop-filter: saturate(180%) blur(14px); backdrop-filter: saturate(180%) blur(14px); }
+    }
+    .site-header .bar { display: flex; align-items: center; gap: 16px; max-width: 1040px; height: 56px; margin: 0 auto; padding: 0 20px; }
+    .brand { flex: none; color: var(--ink); font-weight: 700; font-size: 0.95em; letter-spacing: -0.01em; text-decoration: none; }
+    .brand:hover { color: #fff; }
+    .head-title { flex: 1; min-width: 0; overflow: hidden; color: var(--muted); font-size: 0.85em; white-space: nowrap; text-overflow: ellipsis; }
+    .head-cta { flex: none; margin-left: auto; padding: 7px 14px; border: 1px solid var(--line-2); border-radius: 8px; color: var(--ink); font-size: 0.85em; font-weight: 600; line-height: 1.4; text-decoration: none; }
+    .head-cta:hover { border-color: var(--accent); color: #fff; }
+    main { display: block; max-width: 760px; margin: 0 auto; padding: 20px 20px 48px; }
+    .crumbs { margin: 0 0 18px; font-size: 0.82em; line-height: 1.5; }
+    .crumbs ol { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; color: var(--muted); }
+    .crumbs li { display: flex; gap: 6px; min-width: 0; }
+    .crumbs li + li::before { content: "/"; color: var(--line-2); }
+    .crumbs a { color: var(--muted); text-decoration: none; }
+    .crumbs a:hover { color: var(--ink); text-decoration: underline; }
+    .crumbs [aria-current] { color: var(--text); }
+    h1 { margin: 0 0 10px; color: var(--ink); font-size: clamp(1.6rem, 5vw, 2.25rem); line-height: 1.3; letter-spacing: -0.02em; }
+    h2 { margin: 52px 0 16px; color: var(--ink); font-size: 1.35rem; line-height: 1.4; letter-spacing: -0.01em; }
+    h3 { margin: 28px 0 8px; color: var(--ink); font-size: 1.1rem; line-height: 1.5; }
+    p { margin: 0 0 1.1em; }
+    ul { padding-left: 1.3em; }
+    li { margin: 4px 0; }
+    .page-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0 0 22px; color: var(--muted); font-size: 0.85em; }
+    .page-meta time { color: var(--text); }
+    .disclosure { margin: 0 0 20px; padding: 10px 14px; border-radius: 10px; background: var(--card-2); border: 1px solid var(--line); line-height: 1.6; color: var(--text) !important; }
+    .summary { margin: 0 0 28px; padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+    .summary-title { margin: 0 0 8px; color: var(--accent); font-size: 0.75em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .summary-lead { margin: 0 0 16px; color: var(--ink); font-size: 1.05em; font-weight: 600; line-height: 1.6; }
+    .specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0; margin: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--card-2); }
+    .spec { min-width: 0; margin: 0; padding: 12px 14px; background: var(--card-2); box-shadow: 1px 0 0 var(--line), 0 1px 0 var(--line); }
+    .spec dt { color: var(--muted); font-size: 0.72em; font-weight: 600; letter-spacing: 0.06em; line-height: 1.4; text-transform: uppercase; }
+    .spec dd { margin: 4px 0 0; color: var(--ink); font-size: 1em; font-weight: 600; line-height: 1.45; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+    .hero { margin: 0 0 24px; }
+    .hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; background: var(--card); }
+    .hero figcaption { margin-top: 6px; color: var(--muted); font-size: 0.8em; }
+    .intro { font-size: 1.05em; color: var(--ink); }
+    .table-wrap { margin: 16px 0 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+    table { width: 100%; margin: 0; border-collapse: collapse; font-size: 0.92em; line-height: 1.55; font-variant-numeric: tabular-nums; }
+    th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    tr:last-child > th, tr:last-child > td { border-bottom: 0; }
+    thead th { background: #16213a; color: var(--ink); font-size: 0.85em; font-weight: 700; letter-spacing: 0.02em; }
+    tbody th { width: 38%; background: var(--card-2); color: var(--muted); font-weight: 600; }
+    td { color: var(--ink); }
+    .compare table { min-width: 620px; }
+    .compare td { white-space: nowrap; }
+    .compare td:first-child { min-width: 150px; max-width: 200px; white-space: normal; }
+    .compare tr.self td { background: var(--self); font-weight: 600; }
+    .compare th:first-child, .compare td:first-child { position: sticky; left: 0; z-index: 1; background: var(--card); box-shadow: 1px 0 0 var(--line); }
+    .compare thead th:first-child { background: #16213a; }
+    .compare tr.self td:first-child { background: var(--self); }
+    .swipe { display: none; margin: 0 0 4px; color: var(--muted); font-size: 0.8em; text-align: right; }
+    .verified { color: var(--muted); font-size: 0.85em; line-height: 1.6; }
+    #offer { scroll-margin-top: 72px; }
+    .cta { background: var(--card) !important; border-color: var(--line-2) !important; border-radius: 12px !important; }
+    .cta > a { display: inline-block; padding: 12px 20px; border-radius: 10px; background: var(--btn); color: #fff; font-weight: 700; text-decoration: none; line-height: 1.4; }
+    .cta > a:hover { background: var(--btn-hover); color: #fff; }
+    .cta .disclosure { margin: 12px 0 0; }
+    section { margin: 0; }
+    .toc { margin: 0 0 8px; padding: 16px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+    .toc-title { margin: 0 0 6px; color: var(--muted); font-size: 0.75em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .toc ol { margin: 0; padding-left: 1.3em; display: grid; gap: 2px; color: var(--muted); }
+    .toc a { color: var(--text); text-decoration: none; }
+    .toc a:hover { color: var(--ink); text-decoration: underline; }
+    h2[id] { scroll-margin-top: 72px; }
+    .acc { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .acc > li { margin: 0; }
+    .acc details { border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+    .acc details[open] { border-color: var(--line-2); }
+    .acc summary { cursor: pointer; display: flex; gap: 10px; align-items: baseline; padding: 14px 44px 14px 16px; position: relative; color: var(--ink); font-weight: 600; line-height: 1.5; list-style: none; }
+    .acc summary::-webkit-details-marker { display: none; }
+    .acc summary::after { content: "+"; position: absolute; right: 16px; top: 12px; color: var(--accent); font-size: 1.3em; line-height: 1; }
+    .acc details[open] > summary::after { content: "\2212"; }
+    .acc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 12px; }
+    .acc details > p { margin: 0; padding: 0 16px 16px; }
+    .step { flex: none; color: var(--accent); font-size: 0.72em; font-weight: 700; letter-spacing: 0.08em; }
+    .sources { margin: 48px 0 0; padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--card-2); }
+    .sources-title { margin: 0 0 8px; color: var(--muted); font-size: 0.75em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .sources ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+    .sources li { margin: 0; }
+    .sources p { margin: 8px 0 0; color: var(--muted); font-size: 0.8em; }
+    .about { margin: 24px 0 0; padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; }
+    .about-title { margin: 0 0 6px; color: var(--ink); font-size: 0.95em; font-weight: 700; }
+    .about p { margin: 0; color: var(--muted); font-size: 0.88em; line-height: 1.7; }
+    .back-to-offer { margin: 32px 0 0; text-align: center; }
+    .back-to-offer a { display: inline-block; padding: 10px 18px; border: 1px solid var(--line-2); border-radius: 999px; color: var(--ink); font-weight: 600; text-decoration: none; }
+    .back-to-offer a:hover { border-color: var(--accent); }
+    .related { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .related h2 { margin-top: 0; }
+    .related ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .related li { margin: 0; }
+    .related a { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 100%; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); color: var(--ink); font-weight: 600; line-height: 1.5; text-decoration: none; }
+    .related a::after { content: "\2192"; color: var(--accent); }
+    .related a:hover { border-color: var(--accent); }
+    .site-footer { max-width: 760px; margin: 0 auto; padding: 20px 20px 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85em; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    .site-footer a { color: var(--muted); }
+    .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; width: 100%; padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .sticky-cta.translate-y-full { transform: translateY(100%); visibility: hidden; pointer-events: none; }
+    .sticky-cta a { display: block; max-width: 560px; margin: 0 auto; padding: 14px 20px; border-radius: 12px; background: var(--btn); color: #fff; font-weight: 700; line-height: 1.4; text-align: center; text-decoration: none; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45); }
+    .sticky-cta a:hover { background: var(--btn-hover); color: #fff; }
+    @media (min-width: 768px) { .sticky-cta { display: none; } }
+    @media (max-width: 767px) { body.has-sticky-cta { padding-bottom: 84px; } }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .site-header .bar { padding: 0 16px; }
+      .head-title { display: none; }
+      main { padding: 16px 16px 40px; }
+      h2 { margin-top: 44px; font-size: 1.22rem; }
+      .summary { padding: 16px; }
+      .specs { grid-template-columns: 1fr 1fr; }
+      .swipe { display: block; }
+      thead th { white-space: nowrap; }
+      .cta > a { display: block; text-align: center; }
+      .site-footer { padding: 20px 16px 28px; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="../../../">⌂ Home</a>
+      <span class="head-title">TMDHosting Starter</span>
+      <a class="head-cta" href="#offer">See pricing</a>
+    </div>
+  </header>
+  <main>
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol><li><a href="../../../">Home</a></li><li>Shared Hosting</li><li aria-current="page">TMDHosting Starter</li></ol>
+    </nav>
+    <h1>TMDHosting Starter for a Small Online Store</h1>
+    <p class="page-meta"><span>🔄 Last updated: <time datetime="2026-10-10">Oct 10, 2026</time></span><span>Prices checked Oct 10, 2026</span></p>
+    <p class="disclosure" style="font-size:0.85em;color:#64748b">Disclosure: This page contains affiliate links. If you buy or sign up through them, we may earn a commission at no extra cost to you.</p>
+    <aside class="summary" aria-label="Key facts at a glance">
+      <p class="summary-title">Key facts at a glance</p>
+      <p class="summary-lead">TMDHosting Starter for a small online store: what the plan includes, HTTPS and backup checks for checkout pages, and the billing to review before signing up.</p>
+      <dl class="specs"><div class="spec"><dt>Host</dt><dd>TMDHosting</dd></div><div class="spec"><dt>Price (monthly)</dt><dd>$9.52</dd></div><div class="spec"><dt>Term</dt><dd>36 months</dd></div><div class="spec"><dt>Billing</dt><dd>USD per month; paid triennially (36 months), 20% off the listed $11.90/mo</dd></div><div class="spec"><dt>Storage</dt><dd>50GB SSD</dd></div><div class="spec"><dt>Prices checked</dt><dd>Oct 10, 2026</dd></div></dl>
+    </aside>
+    
+    <p class="intro">A small online store depends on a checkout page that loads over HTTPS, on a recent copy of the shop that can be restored after a mistake, and on hosting costs that match the budget. This page explains what TMDHosting Starter includes, who it suits, and what a store owner should check before signing up, with a short comparison to other shared hosting plans. Prices, including renewal prices, appear in the verified table on this page.</p>
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol><li><a href="#s1">What TMDHosting Starter includes</a></li><li><a href="#s2">Who this plan suits</a></li><li><a href="#s3">HTTPS on checkout pages</a></li><li><a href="#s4">Backups: the key gap for a store</a></li><li><a href="#s5">Billing and renewal to check before signing up</a></li><li><a href="#s6">How TMDHosting Starter compares with alternatives</a></li><li><a href="#guide">Practical setup guide</a></li><li><a href="#faq">Frequently asked questions</a></li></ol>
+    </nav>
+    <section id="offer">
+      <h2>Plan details (official data)</h2>
+      <div class="table-wrap"><table>
+        <tr><th>Plan</th><td>TMDHosting Starter</td></tr>
+        <tr><th>Host</th><td>TMDHosting</td></tr>
+        <tr><th>Category</th><td>Shared Hosting</td></tr>
+        <tr><th>Price (monthly)</th><td>$9.52</td></tr>
+        <tr><th>Term</th><td>36 months</td></tr>
+        <tr><th>Billing</th><td>USD per month; paid triennially (36 months), 20% off the listed $11.90/mo</td></tr>
+        <tr><th>Storage</th><td>50GB SSD</td></tr>
+      </table></div>
+      <h3>Inclusions and features (official data)</h3>
+      <ul><li>1 Website</li><li>Standard Performance</li><li>Free SSL Certificates</li><li>No Backups</li><li>Free Domain</li><li>Free Domain Transfer</li><li>No Setup Fee</li><li>Free Website Transfer</li><li>LiteSpeed Web Server</li><li>Free cPanel</li><li>Free CloudFlare CDN</li><li>SSH and SFTP Access</li><li>99.9% Uptime Guarantee</li><li>30 day money back guarantee</li></ul>
+      <p class="verified">Prices were checked on TMDHosting&#39;s official pricing page on Oct 10, 2026. The official data used here does not list a renewal price, so check what the plan renews at on the official site before you buy.</p>
+      <div class="cta" style="margin:16px 0;padding:16px;border:1px solid #e2e8f0;border-radius:8px"><a href="https://my.tmdhosting.com/aff/0c1fb52d466aadad205b570f614b52c9c7457aec" rel="sponsored nofollow noopener" target="_self">See current TMDHosting pricing and plan details</a></div>
+    </section>
+    <section>
+      <h2 id="compare">Compare plans in this category (official data)</h2>
+      <p class="swipe" aria-hidden="true">Swipe the table to see more →</p>
+      <div class="table-wrap compare"><table>
+        <thead><tr><th>Plan</th><th>Host</th><th>Intro price (monthly)</th><th>Renewal price (monthly)</th><th>Term</th><th>Billing</th><th>Storage</th><th>Bandwidth</th></tr></thead>
+        <tbody>
+        <tr class="self"><td>TMDHosting Starter (this plan)</td><td>TMDHosting</td><td>$9.52</td><td>Not listed</td><td>36 months</td><td>USD per month; paid triennially (36 months), 20% off the listed $11.90/mo</td><td>50GB SSD</td><td>Not listed</td></tr>
+        <tr><td>Namecheap Stellar</td><td>Namecheap</td><td>$2.28</td><td>$4.66</td><td>12 months</td><td>USD per month equivalent; billing term and prepayment depend on plan</td><td>20 GB SSD</td><td>Unmetered</td></tr>
+        <tr><td>Namecheap Stellar Plus</td><td>Namecheap</td><td>$2.98</td><td>$7.12</td><td>12 months</td><td>USD per month equivalent; billing term and prepayment depend on plan</td><td>Unlimited SSD</td><td>Unmetered</td></tr>
+        <tr><td>Namecheap Stellar Business</td><td>Namecheap</td><td>$4.98</td><td>$10.74</td><td>12 months</td><td>USD per month equivalent; billing term and prepayment depend on plan</td><td>50 GB SSD</td><td>Unmetered</td></tr>
+        <tr><td>TMDHosting Business</td><td>TMDHosting</td><td>$12.72</td><td>Not listed</td><td>36 months</td><td>USD per month; paid triennially (36 months), 20% off the listed $15.90/mo</td><td>100GB SSD</td><td>Not listed</td></tr>
+        </tbody>
+      </table></div>
+      <p class="verified">All values in this table come from each host&#39;s official pricing page. This plan was checked on Oct 10, 2026; every compared plan was checked within the last 60 days.</p>
+    </section>
+    <section>
+      <h2 id="s1">What TMDHosting Starter includes</h2>
+      <p>TMDHosting Starter is a Shared Hosting plan from TMDHosting. The official pricing page lists these features: 1 Website, Standard Performance, Free SSL Certificates, No Backups, Free Domain, Free Domain Transfer, No Setup Fee, Free Website Transfer, LiteSpeed Web Server, Free cPanel, Free CloudFlare CDN, SSH and SFTP Access, and a 30 day money back guarantee.</p>
+      <p>The listed storage is 50GB SSD. Bandwidth is not listed for this plan, so store owners who expect traffic spikes from sales or promotions should ask TMDHosting about traffic limits before signing up.</p>
+    </section>
+    <section>
+      <h2 id="s2">Who this plan suits</h2>
+      <p>The plan fits a store owner running a single shop on one site, since the feature list says 1 Website. Owners who plan to add a second storefront, a separate blog domain or a staging copy on its own domain may need a plan that allows more websites.</p>
+      <p>Free Website Transfer and Free Domain Transfer can help an owner who already runs a shop elsewhere and wants to move it. The feature list does not name specific e-commerce software, so confirm with TMDHosting that the store platform you use is supported.</p>
+    </section>
+    <section>
+      <h2 id="s3">HTTPS on checkout pages</h2>
+      <p>Customers enter addresses and payment details at checkout, so every store page should load over HTTPS. The plan lists Free SSL Certificates, which covers the certificate itself. After the certificate is active, open the cart and checkout pages in a browser and look for the padlock, and make sure the plain HTTP address redirects to HTTPS.</p>
+      <p>Free CloudFlare CDN is also listed. If you turn it on, check that HTTPS still works on checkout pages afterward, since a CDN sits between visitors and the server.</p>
+    </section>
+    <section>
+      <h2 id="s4">Backups: the key gap for a store</h2>
+      <p>The feature list for this plan says No Backups. For a store, that means orders, product listings, customer accounts and theme changes are not protected by a hosting backup on this plan. Plan your own backup routine from the first day, and keep copies somewhere other than the hosting account.</p>
+      <p>The plan lists SSH and SFTP Access and Free cPanel, which give ways to download site files and databases. Many store platforms also offer export tools or backup plugins. Whichever method you choose, test a restore on a copy of the site so you know the backup actually works.</p>
+      <p>TMDHosting Business, covered below, lists 30 Backup Copies, which may matter to owners who would rather not manage backups alone.</p>
+    </section>
+    <section>
+      <h2 id="s5">Billing and renewal to check before signing up</h2>
+      <p>Billing on the official pricing page is described as USD per month, paid triennially, with a term of 36 months. In practice, this means the full term is paid up front rather than month by month, so check the total due at checkout in the price table.</p>
+      <p>The official data does not state whether the renewal price is higher, lower or the same as the first-term price. Before signing up, read the renewal price in the table and confirm it with TMDHosting, then note when the term ends so the renewal does not come as a surprise. No Setup Fee is listed, and the 30 day money back guarantee is listed; read its conditions on the TMDHosting site before relying on it.</p>
+    </section>
+    <section>
+      <h2 id="s6">How TMDHosting Starter compares with alternatives</h2>
+      <p>TMDHosting Business uses the same billing structure, paid triennially with a term of 36 months. It lists Unlimited Websites, Performance x2, 30 Backup Copies and 100GB SSD, along with the same SSL, domain, transfer, cPanel, CDN and SSH and SFTP features as Starter. It suits an owner who wants hosting backups included or plans to run more than one site.</p>
+      <p>Namecheap Stellar lists 3 websites, 20 GB SSD and Unmetered bandwidth. Namecheap Stellar Plus lists Unlimited websites, Unlimited SSD and Unmetered bandwidth. Namecheap Stellar Business lists Unlimited websites, 50 GB SSD and Unmetered bandwidth. Each Namecheap plan has a term of 12 months, and billing is described as USD per month equivalent, with billing term and prepayment depending on plan. These may suit an owner who prefers a shorter term than 36 months.</p>
+      <p>For all three Namecheap plans, the renewal price is higher than the intro price, so read the renewal price and term for each in the table. The provided data for the Namecheap plans does not list backup or SSL features, so check those before choosing one for a store.</p>
+    </section>
+    <section class="guide">
+      <h2 id="guide">Practical setup guide</h2>
+      <ol class="acc">
+        <li><details open><summary><span class="step">STEP 1</span><span>Set up or transfer the store</span></summary>
+        <p>Install your store or request the Free Website Transfer listed for the plan, and keep the current site live while the new copy is prepared. Check products, cart and checkout on the new hosting before any visitors are sent to it. Confirm your store software is supported if you have not already.</p></details></li>
+        <li><details><summary><span class="step">STEP 2</span><span>Connect the domain</span></summary>
+        <p>Once the store works on the new hosting, point the domain at it by updating nameservers or DNS records at your registrar, or use the Free Domain or Free Domain Transfer listed for the plan. DNS changes can take some time to reach all visitors, so avoid editing orders or products on the old site during the switch.</p></details></li>
+        <li><details><summary><span class="step">STEP 3</span><span>Turn on HTTPS for checkout</span></summary>
+        <p>After the domain points at the new hosting, activate the Free SSL Certificates included with the plan. Then check the response headers from your own computer, replacing example.com with your domain: curl -I https://example.com. Also open checkout pages in a browser and make sure HTTP redirects to HTTPS.</p></details></li>
+        <li><details><summary><span class="step">STEP 4</span><span>Create your own backup routine</span></summary>
+        <p>Because the plan lists No Backups, set up your own backups right away using SSH and SFTP Access, cPanel or your store platform&#39;s export tools. Over SSH, an archive of the site files can be made from the home directory, replacing public_html if your files live elsewhere: tar -czf site-backup.tar.gz public_html. Export the database as well, download both copies off the server, and test a restore.</p></details></li>
+        <li><details><summary><span class="step">STEP 5</span><span>Record billing details</span></summary>
+        <p>Note the renewal date at the end of the term of 36 months and the renewal price shown in the table. Set a reminder well before that date so you can decide whether to renew or switch. Keep the money back guarantee conditions on file in case the plan is not a fit.</p></details></li>
+      </ol>
+    </section>
+    <section class="faq">
+      <h2 id="faq">Frequently asked questions</h2>
+      <ul class="acc">
+        <li><details open><summary>Does TMDHosting Starter include SSL for a checkout page?</summary>
+        <p>Yes, the plan lists Free SSL Certificates. After setup, confirm that cart and checkout pages load over HTTPS and that HTTP addresses redirect to HTTPS.</p></details></li>
+        <li><details><summary>Does TMDHosting Starter back up my store?</summary>
+        <p>No. The feature list says No Backups, so the store owner is responsible for making and testing backups. TMDHosting Business lists 30 Backup Copies if hosting backups are a priority.</p></details></li>
+        <li><details><summary>How many stores can run on this plan?</summary>
+        <p>The plan lists 1 Website. Owners who need more sites can compare TMDHosting Business, which lists Unlimited Websites, or the Namecheap plans described above.</p></details></li>
+        <li><details><summary>How is the plan billed?</summary>
+        <p>It is billed in USD per month and paid triennially, with a term of 36 months. See the price table for the amount due and the renewal price.</p></details></li>
+        <li><details><summary>Can an existing store be moved to TMDHosting Starter?</summary>
+        <p>The plan lists Free Website Transfer and Free Domain Transfer. Ask TMDHosting how the transfer works for your store platform before scheduling the move.</p></details></li>
+      </ul>
+    </section>
+    <aside class="sources" aria-label="Further reading (external references)">
+      <p class="sources-title">Further reading (external references)</p>
+      <ul><li><a href="https://en.wikipedia.org/wiki/Shared_web_hosting_service" target="_blank" rel="noopener">Shared web hosting service · Wikipedia ↗</a></li><li><a href="https://letsencrypt.org/how-it-works/" target="_blank" rel="noopener">How SSL certificate issuance works · Let&#39;s Encrypt ↗</a></li></ul>
+      <p>External references open in a new tab. We have no affiliate relationship with them.</p>
+    </aside>
+    <aside class="about">
+      <p class="about-title">How we check this page</p>
+      <p>Intro prices, renewal prices and terms are entered only after a person checks them on the host&#39;s official pricing page, and the check date is shown. Prices older than 60 days are not republished until they are checked again. The explanations are drafted by AI from the official data only, and an automatic check rejects numbers not in the data, made-up user reviews and hype. This site is supported by affiliate commissions; the table values are copied from official data regardless of commission.</p>
+    </aside>
+    <p class="back-to-offer"><a href="#offer">↑ Back to the price table and plan link</a></p>
+    <section class="related related-plans">
+      <h2>Related pages</h2>
+      <ul><li><a href="../../../hosts/tmdhosting/business/">TMDHosting Business</a></li><li><a href="../../../hosts/tmdhosting/enterprise/">TMDHosting Enterprise</a></li><li><a href="../../../hosts/tmdhosting/">All TMDHosting plans</a></li></ul>
+    </section>
+  </main>
+  <footer class="site-footer"><a href="../../../">⌂ Home</a><a href="#top">Back to top</a><a href="../../../about/">About</a><a href="../../../how-we-check-prices/">How we check prices</a></footer>
+  <div id="sticky-cta" class="sticky-cta translate-y-full" hidden>
+    <a href="#offer">Check the current price</a>
+  </div>
+  <script>
+  (function () {
+    var box = document.getElementById('sticky-cta');
+    var src = document.querySelector('.cta a[rel~="sponsored"]');
+    if (!box || !src) return;
+    var a = box.querySelector('a');
+    a.href = src.href; a.rel = src.rel; a.target = '_self';
+    box.hidden = false; document.body.classList.add('has-sticky-cta');
+    var near = false;
+    function update() { box.classList.toggle('translate-y-full', !(window.scrollY > 100 && !near)); }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) { near = e[0].isIntersecting; update(); }).observe(src.closest('.cta') || src);
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+  </script>
+  
+</body>
+</html>
