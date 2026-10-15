@@ -40,19 +40,23 @@
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosting-cost-calculator/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosts/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosts/digitalocean/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosts/digitalocean/basic-1-gib/</loc>
     <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/digitalocean/basic-16-gib/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosts/digitalocean/basic-2-gib-2-vcpu/</loc>
@@ -63,8 +67,16 @@
     <lastmod>2026-10-10</lastmod>
   </url>
   <url>
+    <loc>https://hosts.fasthosting.info/hosts/digitalocean/basic-4-gib/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
     <loc>https://hosts.fasthosting.info/hosts/digitalocean/basic-512-mib/</loc>
     <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/digitalocean/basic-8-gib/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosts/namecheap/</loc>
@@ -175,6 +187,6 @@
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/renewal-prices/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
 </urlset>
