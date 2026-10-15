@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Much RAM Does a Small Website Need</title>
+  <meta name="description" content="Estimate website RAM from your software and measured memory use, and see what each step up in memory costs on plans we checked." />
+  <link rel="canonical" href="https://hosts.fasthosting.info/guides/how-much-ram-small-website/" />
+  <meta name="theme-color" content="#0b1220" />
+  <style>:root{color-scheme:dark;--bg:#0b1220;--card:#111a2e;--line:#1f2a40;--ink:#f1f5f9;--text:#cbd5e1;--muted:#94a3b8;--link:#93c5fd}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;line-height:1.7}
+    a{color:var(--link);text-underline-offset:3px}.bar{position:sticky;top:0;background:rgba(11,18,32,.92);border-bottom:1px solid var(--line);padding:12px 16px}.bar a{color:var(--ink);font-weight:700;text-decoration:none}
+    main{max-width:760px;margin:0 auto;padding:24px 16px 56px}h1{color:var(--ink);font-size:1.7rem;line-height:1.3;margin:.4rem 0}h2{color:var(--ink);font-size:1.15rem;margin:2rem 0 .6rem}
+    .crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;font-size:.85rem;color:var(--muted)}.crumbs li+li::before{content:"›";margin-right:6px}
+    .lead{color:var(--muted)}ul.hub{list-style:none;padding:0;margin:0;display:grid;gap:10px}ul.hub li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+    ul.hub a{font-weight:600}ul.hub p{margin:.2rem 0 0;font-size:.9rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:16px;text-align:center;font-size:.85rem;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px}
+    .tw{overflow-x:auto;margin:.6rem 0 1rem}.tw table{border-collapse:collapse;width:100%;font-size:.9rem}.tw th,.tw td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.tw th{color:var(--ink);font-weight:600;white-space:nowrap}.tw td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+    .guide h2{margin-top:2rem}.guide h3{margin-top:1.4rem}.guide ul,.guide ol{padding-left:1.3rem}.guide li{margin:.35rem 0}.guide code{font-size:.9em}
+    .upd{font-size:.85rem;color:var(--muted);margin:.2rem 0 1rem}.disc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:.88rem}</style>
+  <!--pseo:og--><meta property="og:url" content="https://hosts.fasthosting.info/guides/how-much-ram-small-website/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="How Much RAM Does a Small Website Need" />
+  <meta property="og:description" content="Estimate website RAM from your software and measured memory use, and see what each step up in memory costs on plans we checked." />
+  <meta name="twitter:card" content="summary" /><!--/pseo:og-->
+</head>
+<body>
+  <header class="bar"><a href="../../">⌂ Home</a></header>
+  <main>
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../../guides/">Guides</a></li><li aria-current="page">How Much RAM Does a Small Website Need</li></ol></nav>
+    <h1>How Much RAM Does a Small Website Need</h1>
+    <p class="lead">Estimate website RAM from your software and measured memory use, and see what each step up in memory costs on plans we checked.</p>
+    <p class="upd">Updated Oct 15, 2026</p>
+    <div class="guide">
+<p>There is no single RAM figure that fits every small website. A site serving cached pages uses memory differently from a shop calculating carts or an application processing uploads. Start with the software you run and how it behaves under realistic use.</p>
+<p>RAM holds data that running processes need quickly: the operating system, web server, application workers, database, and background jobs. If the database runs on a separate service, its memory is not part of your web server's budget.</p>
+<h2>Count the work happening at once</h2>
+<p>Monthly visitor totals hide short busy periods. A newsletter can bring many visitors at once, and a scheduled job can run while people browse. List the processes on your server and look for tasks that overlap: page requests, admin screens, imports, image processing, backups, and deployments.</p>
+<h2>Build an estimate from measurements</h2>
+<p>A first estimate is: memory for the operating system and always-running services, plus active application workers, plus room for background jobs.</p>
+<p>Here is a rough paper calculation, just to show the math:</p>
+<ul><li>Operating system and services: 500 MiB</li><li>Four active workers at 120 MiB each: 480 MiB</li><li>A scheduled task running at the same time: 200 MiB</li><li>Subtotal: 1,180 MiB before headroom</li></ul>
+<p>Those inputs must come from your own server before you use them to buy anything.</p>
+<h2>What each step up costs</h2>
+<p>Once you know roughly how much memory you need, the next question is what the next size costs. These are self-managed VPS plans from our price tables:</p>
+<div class="tw"><table><thead><tr><th>RAM</th><th>Vultr Cloud Compute (checked 2026-10-08/11)</th><th>DigitalOcean Basic (checked 2026-10-01)</th></tr></thead><tbody><tr><td>0.5 GB / 512 MiB</td><td>$3.50/mo</td><td>$4/mo</td></tr><tr><td>1 GB</td><td>$5/mo</td><td>$6/mo</td></tr><tr><td>2 GB</td><td>$10/mo (1 vCPU)</td><td>$12/mo (1 vCPU)</td></tr><tr><td>2 GB, 2 vCPU</td><td>—</td><td>$18/mo</td></tr><tr><td>4 GB, 2 vCPU</td><td>$20/mo</td><td>—</td></tr><tr><td>8 GB, 4 vCPU</td><td>$40/mo</td><td>—</td></tr></tbody></table></div>
+<p>Both providers' prices above are monthly. Vultr bills hourly up to that monthly price. Because both let you resize a server later, starting at a measured size and moving up when the numbers show pressure is usually cheaper than buying extra headroom on day one. Full details are on our <a href="https://hosts.fasthosting.info/hosts/vultr/" rel="noopener">Vultr</a> and <a href="https://hosts.fasthosting.info/hosts/digitalocean/" rel="noopener">DigitalOcean</a> plan pages.</p>
+<h2>Read the right signals</h2>
+<p>On Linux, low &quot;free&quot; memory does not mean the server is struggling; the system uses spare memory for caches. The MemAvailable value estimates memory available for new programs without swapping. [1]</p>
+<p>Watch for out-of-memory events, failed jobs, slower responses, and constant swap use. A slowdown is not always a memory problem: CPU, disk, network, or database design may be the cause.</p>
+<p>If you use PHP, memory_limit caps what one script may use. It is not the server's total RAM, and raising it does not add memory. [2]</p>
+<h2>Test before you commit</h2>
+<p>Test ordinary browsing, admin tasks, and the heaviest routine jobs in a test environment, and record memory, response time, and errors together. Before upgrading, check for unnecessary services, too many workers, and expensive jobs. [3]</p>
+<h2>Sources</h2>
+<p>Checked 2026-10-14. The worker numbers above are a hypothetical example to show how the math works. Prices are from official pricing pages on the dates shown.</p>
+<ul><li>[1] <a href="https://docs.kernel.org/filesystems/proc.html" rel="noopener">https://docs.kernel.org/filesystems/proc.html</a></li><li>[2] <a href="https://www.php.net/manual/en/ini.core.php" rel="noopener">https://www.php.net/manual/en/ini.core.php</a></li><li>[3] <a href="https://docs.digitalocean.com/products/droplets/concepts/choosing-a-plan/" rel="noopener">https://docs.digitalocean.com/products/droplets/concepts/choosing-a-plan/</a></li></ul>
+    </div>
+    <!--pseo:share--><section class="pseo-share" aria-label="Share this article" data-copy="Copy link" data-copied="Link copied." data-manual="Select and copy the link below."><p>Found this helpful? Share this article.</p><button type="button">Share</button><p class="pseo-share-msg" role="status" aria-live="polite"></p><input type="text" readonly hidden aria-label="Article link" /><style>.pseo-share{margin:2.5rem 0 1rem;padding:1rem 1.1rem;border:1px solid rgba(148,163,184,.35);border-radius:12px;display:flex;flex-wrap:wrap;align-items:center;gap:.6rem .9rem}.pseo-share p{margin:0;flex:1 1 14rem}.pseo-share button{font:inherit;font-weight:600;color:inherit;background:rgba(148,163,184,.15);border:1px solid rgba(148,163,184,.5);border-radius:999px;padding:.6rem 1.2rem;min-height:44px;cursor:pointer}.pseo-share button:hover{background:rgba(148,163,184,.28)}.pseo-share button:focus-visible{outline:2px solid currentColor;outline-offset:2px}.pseo-share-msg{flex-basis:100%;margin:0;font-size:.9em;opacity:.85}.pseo-share-msg:empty{display:none}.pseo-share input{flex-basis:100%;font:inherit;padding:.5rem .6rem;border-radius:8px;border:1px solid rgba(148,163,184,.5);background:transparent;color:inherit}</style><script>(function(){var b=document.querySelector('.pseo-share');if(!b)return;var c=document.querySelector('link[rel=canonical]'),u=c&&c.href;if(!u||!/^https?:/.test(u)){b.hidden=true;return}var m=document.querySelector('meta[name=description]'),d=m&&m.content||'',t=document.title||'';var btn=b.querySelector('button'),msg=b.querySelector('.pseo-share-msg'),box=b.querySelector('input'),busy=false,can=!!navigator.share;if(!can)btn.textContent=b.getAttribute('data-copy');function say(s){msg.textContent=s}function manual(){box.value=u;box.hidden=false;box.focus();box.select();say(b.getAttribute('data-manual'))}function copy(){if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(function(){say(b.getAttribute('data-copied'))},manual)}else manual()}btn.addEventListener('click',function(){if(busy)return;try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'share'+location.pathname,title:'Share click',event:true})}catch(x){}say('');if(!can){copy();return}busy=true;navigator.share({title:t,text:d,url:u}).then(function(){},function(e){if(!e||e.name!=='AbortError')copy()}).then(function(){busy=false})})})();</script></section><!--/pseo:share-->
+  </main>
+  <footer><a href="../../">⌂ Home</a><a href="../../about/">About</a><a href="../../how-we-check-prices/">How we check prices</a><a href="../../contact/">Contact</a></footer>
+</body>
+</html>

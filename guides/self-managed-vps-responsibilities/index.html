@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What You Manage on a Self-Managed VPS</title>
+  <meta name="description" content="The work behind a self-managed VPS: updates, access control, backups, recovery, and monitoring, and why the low monthly price leaves this to you." />
+  <link rel="canonical" href="https://hosts.fasthosting.info/guides/self-managed-vps-responsibilities/" />
+  <meta name="theme-color" content="#0b1220" />
+  <style>:root{color-scheme:dark;--bg:#0b1220;--card:#111a2e;--line:#1f2a40;--ink:#f1f5f9;--text:#cbd5e1;--muted:#94a3b8;--link:#93c5fd}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;line-height:1.7}
+    a{color:var(--link);text-underline-offset:3px}.bar{position:sticky;top:0;background:rgba(11,18,32,.92);border-bottom:1px solid var(--line);padding:12px 16px}.bar a{color:var(--ink);font-weight:700;text-decoration:none}
+    main{max-width:760px;margin:0 auto;padding:24px 16px 56px}h1{color:var(--ink);font-size:1.7rem;line-height:1.3;margin:.4rem 0}h2{color:var(--ink);font-size:1.15rem;margin:2rem 0 .6rem}
+    .crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;font-size:.85rem;color:var(--muted)}.crumbs li+li::before{content:"›";margin-right:6px}
+    .lead{color:var(--muted)}ul.hub{list-style:none;padding:0;margin:0;display:grid;gap:10px}ul.hub li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+    ul.hub a{font-weight:600}ul.hub p{margin:.2rem 0 0;font-size:.9rem;color:var(--muted)}footer{border-top:1px solid var(--line);padding:16px;text-align:center;font-size:.85rem;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px}
+    .tw{overflow-x:auto;margin:.6rem 0 1rem}.tw table{border-collapse:collapse;width:100%;font-size:.9rem}.tw th,.tw td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.tw th{color:var(--ink);font-weight:600;white-space:nowrap}.tw td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+    .guide h2{margin-top:2rem}.guide h3{margin-top:1.4rem}.guide ul,.guide ol{padding-left:1.3rem}.guide li{margin:.35rem 0}.guide code{font-size:.9em}
+    .upd{font-size:.85rem;color:var(--muted);margin:.2rem 0 1rem}.disc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:.88rem}</style>
+  <!--pseo:og--><meta property="og:url" content="https://hosts.fasthosting.info/guides/self-managed-vps-responsibilities/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="What You Manage on a Self-Managed VPS" />
+  <meta property="og:description" content="The work behind a self-managed VPS: updates, access control, backups, recovery, and monitoring, and why the low monthly price leaves this to you." />
+  <meta name="twitter:card" content="summary" /><!--/pseo:og-->
+</head>
+<body>
+  <header class="bar"><a href="../../">⌂ Home</a></header>
+  <main>
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../../guides/">Guides</a></li><li aria-current="page">What You Manage on a Self-Managed VPS</li></ol></nav>
+    <h1>What You Manage on a Self-Managed VPS</h1>
+    <p class="lead">The work behind a self-managed VPS: updates, access control, backups, recovery, and monitoring, and why the low monthly price leaves this to you.</p>
+    <p class="upd">Updated Oct 15, 2026</p>
+    <div class="guide">
+<p>With a self-managed VPS, nobody steps in after the server boots up. Getting a website online is the beginning: someone has to keep the software updated, protect access, notice failures, and bring the site back when something breaks.</p>
+<p>The self-managed plans in our price tables start at $3.50 a month (Vultr Cloud Compute 0.5 GB, checked 2026-10-08) and $4 a month (DigitalOcean Basic 512 MiB, checked 2026-10-01). That price covers the virtual server. The work below is not included.</p>
+<p>The provider runs the physical hardware and the virtualization platform. You are usually responsible for the operating system, installed software, your application, and its configuration. The exact boundary is in the service agreement. [1]</p>
+<h2>Keep the system and application updated</h2>
+<p>Pick an operating system release that still receives security updates, and note its end-of-support date. Update the operating system and everything you install: web server, runtime, database, and application dependencies. Some updates need a restart.</p>
+<p>After updating, check that the site's important functions still work. Automatic security updates reduce routine work, but you still need to configure their restart behavior and watch for failures. [2]</p>
+<h2>Protect access</h2>
+<p>Turn on multi-factor authentication for the hosting account. Give each administrator their own access, limit privileges, and remove access that is no longer needed. Use a secure SSH authentication method and protect the keys.</p>
+<p>Only expose the services that need to be public. Keep databases and admin panels off the open internet unless you have a specific reason and proper protection. Before tightening remote-access settings, make sure another recovery route works so you do not lock yourself out.</p>
+<p>Keep passwords and API keys out of public code and web-accessible folders. [4]</p>
+<h2>Backups only count if you can restore them</h2>
+<p>Decide what to save (database, uploaded files, configuration), how often, where the copies live, and how long to keep them. A server snapshot can help, but it may not give you a consistent copy of a busy database.</p>
+<p>Keep a copy away from the running server, and test restoring it somewhere separate. Decide how much recent data you can afford to lose and how long the site can be down; those answers set your backup schedule. [3] Write the restore steps down while the site is healthy. Even on shared hosting, I still download my own backups rather than relying entirely on the host.</p>
+<h2>Watch the site from outside</h2>
+<p>Monitor memory, CPU, disk space, application errors, and backup results. Also check the site from outside the server, so you notice failures the server cannot report itself. Track certificate and domain renewal dates, and make sure alerts go to an inbox you actually check. [4][5]</p>
+<h2>A short checklist before you rely on the server</h2>
+<ul><li>Who handles updates, access changes, and urgent problems</li><li>Where backups are stored and when a restore last worked</li><li>Which alerts are on and who receives them</li><li>How to get back in, or rebuild, if the server fails</li><li>Which resources keep billing during an outage</li></ul>
+<p>A self-managed VPS makes sense when you have the skills, the time, or reliable help. If nobody can own these tasks, compare it with <a href="https://hosts.fasthosting.info/hosts/" rel="noopener">shared hosting</a>, where the host handles more of this for you.</p>
+<h2>Sources</h2>
+<p>Checked 2026-10-14. A starting checklist, not a complete security guide.</p>
+<ul><li>[1] <a href="https://aws.amazon.com/compliance/shared-responsibility-model/" rel="noopener">https://aws.amazon.com/compliance/shared-responsibility-model/</a></li><li>[2] <a href="https://ubuntu.com/server/docs/how-to/software/automatic-updates/" rel="noopener">https://ubuntu.com/server/docs/how-to/software/automatic-updates/</a></li><li>[3] <a href="https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_backing_up_data_periodic_recovery_testing_data.html" rel="noopener">https://docs.aws.amazon.com/wellarchitected/latest/framework/rel_backing_up_data_periodic_recovery_testing_data.html</a></li><li>[4] <a href="https://docs.digitalocean.com/products/droplets/getting-started/recommended-droplet-setup/" rel="noopener">https://docs.digitalocean.com/products/droplets/getting-started/recommended-droplet-setup/</a></li><li>[5] <a href="https://letsencrypt.org/docs/integration-guide/" rel="noopener">https://letsencrypt.org/docs/integration-guide/</a></li></ul>
+    </div>
+    <!--pseo:share--><section class="pseo-share" aria-label="Share this article" data-copy="Copy link" data-copied="Link copied." data-manual="Select and copy the link below."><p>Found this helpful? Share this article.</p><button type="button">Share</button><p class="pseo-share-msg" role="status" aria-live="polite"></p><input type="text" readonly hidden aria-label="Article link" /><style>.pseo-share{margin:2.5rem 0 1rem;padding:1rem 1.1rem;border:1px solid rgba(148,163,184,.35);border-radius:12px;display:flex;flex-wrap:wrap;align-items:center;gap:.6rem .9rem}.pseo-share p{margin:0;flex:1 1 14rem}.pseo-share button{font:inherit;font-weight:600;color:inherit;background:rgba(148,163,184,.15);border:1px solid rgba(148,163,184,.5);border-radius:999px;padding:.6rem 1.2rem;min-height:44px;cursor:pointer}.pseo-share button:hover{background:rgba(148,163,184,.28)}.pseo-share button:focus-visible{outline:2px solid currentColor;outline-offset:2px}.pseo-share-msg{flex-basis:100%;margin:0;font-size:.9em;opacity:.85}.pseo-share-msg:empty{display:none}.pseo-share input{flex-basis:100%;font:inherit;padding:.5rem .6rem;border-radius:8px;border:1px solid rgba(148,163,184,.5);background:transparent;color:inherit}</style><script>(function(){var b=document.querySelector('.pseo-share');if(!b)return;var c=document.querySelector('link[rel=canonical]'),u=c&&c.href;if(!u||!/^https?:/.test(u)){b.hidden=true;return}var m=document.querySelector('meta[name=description]'),d=m&&m.content||'',t=document.title||'';var btn=b.querySelector('button'),msg=b.querySelector('.pseo-share-msg'),box=b.querySelector('input'),busy=false,can=!!navigator.share;if(!can)btn.textContent=b.getAttribute('data-copy');function say(s){msg.textContent=s}function manual(){box.value=u;box.hidden=false;box.focus();box.select();say(b.getAttribute('data-manual'))}function copy(){if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(function(){say(b.getAttribute('data-copied'))},manual)}else manual()}btn.addEventListener('click',function(){if(busy)return;try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'share'+location.pathname,title:'Share click',event:true})}catch(x){}say('');if(!can){copy();return}busy=true;navigator.share({title:t,text:d,url:u}).then(function(){},function(e){if(!e||e.name!=='AbortError')copy()}).then(function(){busy=false})})})();</script></section><!--/pseo:share-->
+  </main>
+  <footer><a href="../../">⌂ Home</a><a href="../../about/">About</a><a href="../../how-we-check-prices/">How we check prices</a><a href="../../contact/">Contact</a></footer>
+</body>
+</html>

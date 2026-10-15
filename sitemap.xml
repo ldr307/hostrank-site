@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hosts.fasthosting.info/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/about/</loc>
@@ -17,6 +17,26 @@
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/contact/</loc>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/guides/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/guides/how-much-ram-small-website/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/guides/prepaid-hosting-vs-pay-as-you-go/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/guides/self-managed-vps-responsibilities/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/guides/shared-hosting-vs-vps-small-website/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosting-cost-calculator/</loc>
