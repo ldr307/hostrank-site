@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hosts.fasthosting.info/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/about/</loc>
@@ -40,11 +40,11 @@
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosting-cost-calculator/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosts/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosts/digitalocean/</loc>
@@ -77,6 +77,38 @@
   <url>
     <loc>https://hosts.fasthosting.info/hosts/digitalocean/basic-8-gib/</loc>
     <lastmod>2026-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/hosting-com/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/hosting-com/16gb-cloud-server/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/hosting-com/32gb-cloud-server/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/hosting-com/4gb-cloud-server/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/hosting-com/8gb-cloud-server/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/hosting-com/max/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/hosting-com/pro/</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://hosts.fasthosting.info/hosts/hosting-com/starter/</loc>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/hosts/namecheap/</loc>
@@ -171,6 +203,6 @@
   </url>
   <url>
     <loc>https://hosts.fasthosting.info/renewal-prices/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
 </urlset>
